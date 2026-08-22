@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Fitness with Diamond | Dallas Fitness Finds</title>
+
+  <meta name="description" content="Your digital workout bestie. Discover Dallas fitness, wellness events, workouts and lifestyle inspiration with Diamond.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      background: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #f1e1dd;
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      font-family: Georgia, serif;
+      font-size: 25px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    nav a {
+      color: #333;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      opacity: 0.6;
+    }
+
+    .hero {
+      background: #f1e1dd;
+      padding: 90px 7% 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(48px, 7vw, 82px);
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 500px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #333;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .button.light {
+      background: white;
+      color: #333;
+    }
+
+    .hero-card {
+      background: white;
+      width: 320px;
+      height: 390px;
+      border-radius: 160px 160px 25px 25px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 25px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    }
+
+    .hero-card span {
+      font-family: Georgia, serif;
+      font-size: 24px;
+    }
+
+    section {
+      padding: 80px 7%;
+    }
+
+    .section-title {
+      font-family: Georgia, serif;
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+      margin-bottom: 40px;
+      color: #666;
+      max-width: 600px;
+    }
+
+    .events {
+      background: #e7f0e7;
+    }
+
+    .event-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .event-card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .event-date {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+
+    .event-card h3 {
+      font-family: Georgia, serif;
+      font-size: 25px;
+      margin: 12px 0;
+    }
+
+    .event-card p {
+      color: #666;
+    }
+
+    .event-link {
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .about-photo {
+      background: #f1e1dd;
+      min-height: 450px;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, serif;
+      font-size: 24px;
+    }
+
+    .about-text p {
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .categories {
+      background: #faf8f7;
+      text-align: center;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 35px;
+    }
+
+    .category {
+      padding: 35px 20px;
+      background: white;
+      border-radius: 20px;
+      font-family: Georgia, serif;
+      font-size: 25px;
+    }
+
+    .social {
+      background: #333;
+      color: white;
+      text-align: center;
+    }
+
+    .social .section-subtitle {
+      color: #ddd;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    footer {
+      background: #333;
+      color: #aaa;
+      text-align: center;
+      padding: 25px;
+      font-size: 13px;
+    }
+
+    @media (max-width: 800px) {
+
+      header {
+        padding: 18px 5%;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        padding: 65px 6%;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-card {
+        width: 270px;
+        height: 330px;
+      }
+
+      section {
+        padding: 60px 6%;
+      }
+
+      .event-grid,
+      .category-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .about-photo {
+        min-height: 300px;
+      }
+
+      .section-title {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Fitness with Diamond</div>
+
+    <nav>
+      <a href="#events">Events</a>
+      <a href="#wellness">Wellness</a>
+      <a href="#about">About</a>
+      <a href="#social">Connect</a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <section class="hero">
+
+      <div class="hero-text">
+
+        <div class="eyebrow">
+          Dallas • Fitness • Wellness • Lifestyle
+        </div>
+
+        <h1>
+          Your digital workout bestie.
+        </h1>
+
+        <p>
+          Helping you discover fun ways to move, connect and take care of yourself — one Dallas fitness find at a time.
+        </p>
+
+        <a href="#events" class="button">
+          Explore Events
+        </a>
+
+        <a href="#about" class="button light">
+          Meet Diamond
+        </a>
+
+      </div>
+
+
+      <div class="hero-card">
+        <span>Move. Feel. Live.</span>
+      </div>
+
+    </section>
+
+
+    <section id="events" class="events">
+
+      <div class="eyebrow">
+        Dallas Fitness Finds
+      </div>
+
+      <h2 class="section-title">
+        What's happening this week?
+      </h2>
+
+      <p class="section-subtitle">
+        Your weekly guide to fitness and wellness events around Dallas. Find a new workout, meet new people and have a little fun while you're at it.
+      </p>
+
+
+      <div class="event-grid">
+
+        <div class="event-card">
+
+          <div>
+            <div class="event-date">
+              This Week
+            </div>
+
+            <h3>
+              Free Fitness Events
+            </h3>
+
+            <p>
+              Discover free workouts, walks and community fitness events around Dallas.
+            </p>
+          </div>
+
+          <a href="#" class="event-link">
+            View events →
+          </a>
+
+        </div>
+
+
+        <div class="event-card">
+
+          <div>
+            <div class="event-date">
+              Weekend
+            </div>
+
+            <h3>
+              Pilates & Barre
+            </h3>
+
+            <p>
+              Looking for your next Pilates or barre class? Start here.
+            </p>
+          </div>
+
+          <a href="#" class="event-link">
+            Explore classes →
+          </a>
+
+        </div>
+
+
+        <div class="event-card">
+
+          <div>
+            <div class="event-date">
+              Wellness
+            </div>
+
+            <h3>
+              Wellness Finds
+            </h3>
+
+            <p>
+              Wellness experiences, pop-ups and events designed to help you feel your best.
+            </p>
+          </div>
+
+          <a href="#" class="event-link">
+            See wellness →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="wellness" class="categories">
+
+      <div class="eyebrow">
+        Find Your Thing
+      </div>
+
+      <h2 class="section-title">
+        Move your way.
+      </h2>
+
+      <p class="section-subtitle" style="margin-left:auto;margin-right:auto;">
+        Whether you're into lifting, Pilates, walking or trying something completely new, there's a place for you here.
+      </p>
+
+
+      <div class="category-grid">
+
+        <div class="category">
+          Gym & Strength
+        </div>
+
+        <div class="category">
+          Pilates & Barre
+        </div>
+
+        <div class="category">
+          Walks & Community
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section id="about" class="about">
+
+      <div class="about-photo">
+        Your photo goes here ♡
+      </div>
+
+
+      <div class="about-text">
+
+        <div class="eyebrow">
+          Hi, I'm Diamond
+        </div>
+
+        <h2 class="section-title">
+          Fitness is more than a workout.
+        </h2>
+
+        <p>
+          I created Fitness with Diamond as a space for women who want to move their bodies, discover new experiences and build a life they genuinely enjoy.
+        </p>
+
+        <p>
+          From strength training and Pilates to Dallas fitness events and wellness experiences, I'm here to help you find something that makes you excited to show up for yourself.
+        </p>
+
+        <a href="#social" class="button">
+          Let's connect
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <section id="social" class="social">
+
+      <div class="eyebrow">
+        Come hang out with me
+      </div>
+
+      <h2 class="section-title">
+        Let's connect.
+      </h2>
+
+      <p class="section-subtitle">
+        Follow along for workouts, fitness finds, wellness events and a little lifestyle inspiration.
+      </p>
+
+      <a href="https://www.instagram.com/herwaylab/" class="button light" target="_blank">
+        Instagram
+      </a>
+
+      <a href="#" class="button light">
+        TikTok
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    © 2026 Fitness with Diamond • Dallas, Texas
+  </footer>
+
+</body>
+</html>
