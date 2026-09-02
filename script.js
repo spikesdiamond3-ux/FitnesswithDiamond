@@ -10,36 +10,121 @@
 
 const events = [
   {
-    date: "SAT, AUG 22",
-    title: "Pink Paradise Walk",
-    location: "North Dallas",
+    date: "MON, AUG 31",
+    title: "Glad Run Club",
+    location: "Fort Worth, TX",
     price: "FREE",
-    description: "A community walk to move, connect & unwind.",
-    type: "walk"
+    description: "Social run with ASICS. 3 miles on the Trinity Trail.",
+    type: "run",
+    link: "https://gladrunclub.com/pages/join"
   },
   {
-    date: "SUN, AUG 23",
-    title: "Pilates in the Park",
-    location: "Klyde Warren Park",
+    date: "TUE, SEP 1",
+    title: "Futsal",
+    location: "Dallas, TX",
     price: "$15",
-    description: "30-min Pilates session for all levels. Bring your mat!",
-    type: "pilates"
+    description: "Indoor futsal at City Futsal. Choose from 7–8 PM or 8–9 PM.",
+    type: "sports",
+    link: "https://cityfutsal.com/"
   },
   {
-    date: "TUE, AUG 25",
-    title: "HIIT & Sculpt",
-    location: "The Union Dallas",
-    price: "$20",
-    description: "High intensity. Full body. Real results.",
-    type: "hiit"
-  },
-  {
-    date: "THU, AUG 27",
-    title: "Community Yoga",
-    location: "White Rock Lake",
+    date: "WED, SEP 2",
+    title: "Pilates in the Park",
+    location: "Carrollton, TX",
     price: "FREE",
-    description: "Outdoor yoga + good vibes. All are welcome.",
-    type: "yoga"
+    description: "Pilates in the park hosted by Foyer Social & Ava Fitique.",
+    type: "pilates",
+    link: "https://foyer.social/events"
+  },
+  {
+    date: "THU, SEP 3",
+    title: "Girls Run the World",
+    location: "Germany Park, Dallas",
+    price: "FREE",
+    description: "Morning run with the 214 Run Club.",
+    type: "run",
+    link: "https://www.214runclub.com/"
+  },
+  {
+    date: "FRI, SEP 4",
+    title: "Spicy Spanish Sculpt",
+    location: "Dallas, TX",
+    price: "$15",
+    description: "Full-body sculpt workout featuring a Spanish playlist.",
+    type: "pilates",
+    link: "https://www.eventbrite.com/e/15-full-body-sculpt-spanish-playlist-edition-tickets-1999015224348"
+  },
+  {
+    date: "FRI, SEP 4",
+    title: "Poolside Pilates",
+    location: "The Village Dallas",
+    price: "$7.02",
+    description: "Poolside Pilates at Village Beach Club. Non-resident admission is $7.02.",
+    type: "pilates",
+    link: "https://www.thevillagedallas.com/event/poolside-pilates-at-village-beach-club/2026-09-04/"
+  },
+  {
+    date: "FRI, SEP 4",
+    title: "Pilates in the Park",
+    location: "Oak Cliff Founders Park",
+    price: "$25",
+    description: "Pilates in the park with LuvDrunk Cafe.",
+    type: "pilates",
+    link: "https://sweatpals.com/event/pilates-in-the-park-w-luvdrunkcafe"
+  },
+  {
+    date: "SAT, SEP 5",
+    title: "Bubbles & Babes Walk",
+    location: "Allen, TX",
+    price: "FREE",
+    description: "Community walk sponsored by Pepsi with Pretty Pace Club.",
+    type: "walk",
+    link: "https://tr.ee/0FxSrTF3Sm"
+  },
+  {
+    date: "SAT, SEP 5",
+    title: "Pilates in the Park",
+    location: "Mesquite, TX",
+    price: "FREE",
+    description: "Outdoor Pilates with Zena Pilates. Wear red!",
+    type: "pilates",
+    link: "https://sweatpals.com/class/pilates-at-the-park-ac39/2026-09-05"
+  },
+  {
+    date: "SAT, SEP 5",
+    title: "Party in the USA",
+    location: "OMNI Dallas",
+    price: "$25",
+    description: "Pilates Caliente Dallas. Single drop-in class.",
+    type: "pilates",
+    link: "https://app.arketa.co/httpscalendlycompilatescalientedallas?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+  },
+  {
+    date: "SAT, SEP 5",
+    title: "Buff Lifestyle 5K",
+    location: "Dallas, TX",
+    price: "$46.13",
+    description: "Get moving with the Buff Lifestyle 5K.",
+    type: "run",
+    link: "https://www.eyf5k.com/"
+  },
+  {
+    date: "SUN, SEP 6",
+    title: "Pilates & Facials",
+    location: "Dallas, TX",
+    price: "$110",
+    description: "A luxury wellness day featuring Pilates and facials.",
+    type: "pilates",
+    link: "https://posh.vip/e/pilates-facial-party-luxury-wellness-day"
+  },
+  {
+    date: "SUN, SEP 6",
+    title: "US Open Watch Party",
+    location: "Legacy Hall",
+    price: "See event details",
+    description: "Watch the US Open with Dallas Girls Tennis.",
+    type: "sports",
+    link: "https://linktr.ee/dagtc.events"
   }
 ];
 
@@ -62,7 +147,7 @@ function renderEvents() {
 
         <p class="event-description">${event.description}</p>
 
-        <a class="event-link" href="#" onclick="return false;">
+        <a class="event-link" href="${event.link}" target="_blank" rel="noopener noreferrer">
           VIEW DETAILS &nbsp; →
         </a>
       </div>
