@@ -1,3 +1,4 @@
+```js
 /*
   FITNESS WITH DIAMOND
   Weekly event data lives here.
@@ -10,121 +11,196 @@
 
 const events = [
   {
-    date: "MON, AUG 31",
-    title: "Glad Run Club",
-    location: "Fort Worth, TX",
+    date: "MON, SEP 7",
+    title: "Run It Up Dallas",
+    category: "RUN",
+    time: "8:30 AM",
+    location: "Katy Trail, Dallas",
     price: "FREE",
-    description: "Social run with ASICS. 3 miles on the Trinity Trail.",
+    description: "Morning social run on the Katy Trail.",
     type: "run",
-    link: "https://gladrunclub.com/pages/join"
+    link: "https://www.instagram.com/runitup_dallas/"
   },
   {
-    date: "TUE, SEP 1",
-    title: "Futsal",
-    location: "Dallas, TX",
-    price: "$15",
-    description: "Indoor futsal at City Futsal. Choose from 7–8 PM or 8–9 PM.",
+    date: "MON, SEP 7",
+    title: "Athletic Fitness Bootcamp",
+    category: "FITNESS",
+    time: "10:30 AM",
+    location: "Plano, TX",
+    price: "$25.02",
+    description: "Athletic fitness bootcamp designed to boost strength, endurance, and overall fitness. Price is for you and a friend.",
     type: "sports",
-    link: "https://cityfutsal.com/"
+    link: "https://www.eventbrite.com/e/athletic-fitness-bootcamp-labor-day-tickets-1999256984459"
   },
+
   {
-    date: "WED, SEP 2",
-    title: "Pilates in the Park",
-    location: "Carrollton, TX",
-    price: "FREE",
-    description: "Pilates in the park hosted by Foyer Social & Ava Fitique.",
-    type: "pilates",
-    link: "https://foyer.social/events"
-  },
-  {
-    date: "THU, SEP 3",
-    title: "Girls Run the World",
-    location: "Germany Park, Dallas",
-    price: "FREE",
-    description: "Morning run with the 214 Run Club.",
-    type: "run",
-    link: "https://www.214runclub.com/"
-  },
-  {
-    date: "FRI, SEP 4",
-    title: "Spicy Spanish Sculpt",
+    date: "TUE, SEP 8",
+    title: "Volleyball Social",
+    category: "SOCIAL",
+    time: "7:30 PM",
     location: "Dallas, TX",
-    price: "$15",
-    description: "Full-body sculpt workout featuring a Spanish playlist.",
-    type: "pilates",
-    link: "https://www.eventbrite.com/e/15-full-body-sculpt-spanish-playlist-edition-tickets-1999015224348"
-  },
-  {
-    date: "FRI, SEP 4",
-    title: "Poolside Pilates",
-    location: "The Village Dallas",
-    price: "$7.02",
-    description: "Poolside Pilates at Village Beach Club. Non-resident admission is $7.02.",
-    type: "pilates",
-    link: "https://www.thevillagedallas.com/event/poolside-pilates-at-village-beach-club/2026-09-04/"
-  },
-  {
-    date: "FRI, SEP 4",
-    title: "Pilates in the Park",
-    location: "Oak Cliff Founders Park",
-    price: "$25",
-    description: "Pilates in the park with LuvDrunk Cafe.",
-    type: "pilates",
-    link: "https://sweatpals.com/event/pilates-in-the-park-w-luvdrunkcafe"
-  },
-  {
-    date: "SAT, SEP 5",
-    title: "Bubbles & Babes Walk",
-    location: "Allen, TX",
-    price: "FREE",
-    description: "Community walk sponsored by Pepsi with Pretty Pace Club.",
-    type: "walk",
-    link: "https://tr.ee/0FxSrTF3Sm"
-  },
-  {
-    date: "SAT, SEP 5",
-    title: "Pilates in the Park",
-    location: "Mesquite, TX",
-    price: "FREE",
-    description: "Outdoor Pilates with Zena Pilates. Wear red!",
-    type: "pilates",
-    link: "https://sweatpals.com/class/pilates-at-the-park-ac39/2026-09-05"
-  },
-  {
-    date: "SAT, SEP 5",
-    title: "Party in the USA",
-    location: "OMNI Dallas",
-    price: "$25",
-    description: "Pilates Caliente Dallas. Single drop-in class.",
-    type: "pilates",
-    link: "https://app.arketa.co/httpscalendlycompilatescalientedallas?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
-  },
-  {
-    date: "SAT, SEP 5",
-    title: "Buff Lifestyle 5K",
-    location: "Dallas, TX",
-    price: "$46.13",
-    description: "Get moving with the Buff Lifestyle 5K.",
-    type: "run",
-    link: "https://www.eyf5k.com/"
-  },
-  {
-    date: "SUN, SEP 6",
-    title: "Pilates & Facials",
-    location: "Dallas, TX",
-    price: "$110",
-    description: "A luxury wellness day featuring Pilates and facials.",
-    type: "pilates",
-    link: "https://posh.vip/e/pilates-facial-party-luxury-wellness-day"
-  },
-  {
-    date: "SUN, SEP 6",
-    title: "US Open Watch Party",
-    location: "Legacy Hall",
-    price: "See event details",
-    description: "Watch the US Open with Dallas Girls Tennis.",
+    price: "$5",
+    description: "Volleyball social with music, refreshments, and a chance to meet new people.",
     type: "sports",
-    link: "https://linktr.ee/dagtc.events"
+    link: "https://linktr.ee/FemmeF0rward"
+  },
+
+  {
+    date: "WED, SEP 9",
+    title: "Yoga on the Plaza",
+    category: "WELLNESS",
+    time: "6:00 PM",
+    location: "Dallas, TX",
+    price: "DONATION BASED",
+    description: "Donation-based yoga on the plaza.",
+    type: "pilates",
+    link: "https://www.leclique.net/events"
+  },
+  {
+    date: "WED, SEP 9",
+    title: "Sunset Fitness HIIT",
+    category: "FITNESS",
+    time: "6:30–7:30 PM",
+    location: "Grandscape, The Colony",
+    price: "FREE",
+    description: "HIIT workout with Hustle House DFW on the Corona Stage + Lawn.",
+    type: "sports",
+    link: "https://www.grandscape.com/event/sunset-fitness-hiit-with-hustle-house-4/2026-09-09/"
+  },
+  {
+    date: "WED, SEP 9",
+    title: "Ladies Datey",
+    category: "SOCIAL",
+    time: "7:00 PM",
+    location: "O2, Dallas",
+    price: "$44.97",
+    description: "45-minute mat Pilates class with goodie bags and a cocktail tasting mixer.",
+    type: "pilates",
+    link: "https://speakeasygo.com/The-Datey/Ladies-Datey-Dallas-%7C-O2?eid=EVE-QM6GUN"
+  },
+
+  {
+    date: "THU, SEP 10",
+    title: "28th Annual Katy 5K",
+    category: "RUN",
+    time: "7:30 PM",
+    location: "Reverchon Park, Dallas",
+    price: "$75",
+    description: "The 28th annual Katy 5K. Registration required.",
+    type: "run",
+    link: "https://raceroster.com/events/2026/112103/28th-annual-katy-5k-presented-by-michelob-ultra"
+  },
+  {
+    date: "THU, SEP 10",
+    title: "Hot Girls Stride",
+    category: "RUN",
+    time: "7:00 PM",
+    location: "Grand Prairie, TX",
+    price: "FREE",
+    description: "Social run with the Hot Girls Stride community.",
+    type: "run",
+    link: "https://linktr.ee/HotGirlStridee"
+  },
+  {
+    date: "THU, SEP 10",
+    title: "Girls Just Wanna Have Football",
+    category: "SOCIAL",
+    time: "6:30 PM",
+    location: "Dallas, TX",
+    price: "$50–$75",
+    description: "49ers vs. Rams watch party with signature drinks, a curated game-day spread, and plenty of football.",
+    type: "sports",
+    link: "https://www.tickettailor.com/events/sidelinesociete/2363020"
+  },
+
+  {
+    date: "FRI, SEP 11",
+    title: "Spike & Sip Social",
+    category: "SOCIAL",
+    time: "6:00 PM",
+    location: "Klyde Warren Park, Dallas",
+    price: "FREE",
+    description: "Open volleyball play and happy hour with Dallas Sports & Social Club.",
+    type: "sports",
+    link: "https://www.eventbrite.com/e/spike-sip-social-sep-11-tickets-1998519219785"
+  },
+
+  {
+    date: "SAT, SEP 12",
+    title: "Pray N Run Club",
+    category: "RUN",
+    time: "6:30 AM",
+    location: "West Fort Worth",
+    price: "SEE EVENT DETAILS",
+    description: "Community pickleball and 5K event.",
+    type: "run",
+    link: "https://partiful.com/e/NiC65qp5f7LPCJkSNCpj"
+  },
+  {
+    date: "SAT, SEP 12",
+    title: "Hustle Hill",
+    category: "RUN",
+    time: "8:00 AM",
+    location: "Irving, TX",
+    price: "FREE",
+    description: "Free community run held every Saturday.",
+    type: "run",
+    link: "https://linktr.ee/hustlehilldallas"
+  },
+  {
+    date: "SAT, SEP 12",
+    title: "Pilates in the Park",
+    category: "PILATES",
+    time: "9:00 AM",
+    location: "Griggs Park, Dallas",
+    price: "FREE",
+    description: "Outdoor Pilates with Pilates 214. Held every Saturday.",
+    type: "pilates",
+    link: "https://www.instagram.com/pilates214/"
+  },
+  {
+    date: "SAT, SEP 12",
+    title: "Pilates in the Park",
+    category: "PILATES",
+    time: "9:00 AM",
+    location: "Cypress Waters",
+    price: "FREE",
+    description: "High-intensity, cardio-infused Pilates built for all levels.",
+    type: "pilates",
+    link: "https://www.eventbrite.com/e/carries-pilates-in-the-park-cypress-waters-series-tickets-1989437134022"
+  },
+  {
+    date: "SAT, SEP 12",
+    title: "Kota Wellness Pilates",
+    category: "PILATES",
+    time: "9:30 AM",
+    location: "Marriott Dallas Uptown",
+    price: "FREE",
+    description: "Saturday morning Pilates on the plaza. Held every Saturday through October 3rd.",
+    type: "pilates",
+    link: "https://www.eventbrite.com/e/saturday-morning-pilates-on-the-plaza-tickets-1999112516351"
+  },
+  {
+    date: "SAT, SEP 12",
+    title: "Epic FIT Fest",
+    category: "FITNESS",
+    time: "8:00 AM",
+    location: "Elite Performance Training, Irving",
+    price: "$65",
+    description: "A fitness, wellness, community, and shopping experience hosted by Black Girl Fit.",
+    type: "sports",
+    link: "https://events.eventnoire.com/e/epic-fit-fest-2026-the-ultimate-wellness-experienc/tickets"
+  },
+  {
+    date: "SAT, SEP 12",
+    title: "Dallas Hill Sprints",
+    category: "RUN",
+    time: "11:30 AM",
+    location: "Townview High School, Dallas",
+    price: "SEE EVENT DETAILS",
+    description: "Hill sprint workout. Meets Saturdays and Sundays.",
+    type: "run",
+    link: "https://www.instagram.com/dallashillsprints/"
   }
 ];
 
@@ -138,9 +214,13 @@ function renderEvents() {
       </div>
 
       <div class="event-body">
+
+        <span class="event-category">${event.category}</span>
+
         <h3>${event.title}</h3>
 
         <div class="event-meta">
+          <span>🕐 &nbsp; ${event.time}</span>
           <span>⌖ &nbsp; ${event.location}</span>
           <span>♥ &nbsp; ${event.price}</span>
         </div>
@@ -178,3 +258,5 @@ document.getElementById("signup-form").addEventListener("submit", (event) => {
   event.preventDefault();
   alert("Thanks for joining the weekly finds! Connect this form to your email service before launch.");
 });
+```
+
