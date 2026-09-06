@@ -21,7 +21,6 @@ const events = [
     type: "sports",
     link: "https://www.eventbrite.com/e/athletic-fitness-bootcamp-labor-day-tickets-1999256984459"
   },
-
   {
     date: "TUE, SEP 8",
     title: "Volleyball Social",
@@ -33,7 +32,6 @@ const events = [
     type: "sports",
     link: "https://linktr.ee/FemmeF0rward"
   },
-
   {
     date: "WED, SEP 9",
     title: "Yoga on the Plaza",
@@ -53,7 +51,7 @@ const events = [
     location: "Grandscape, The Colony",
     price: "FREE",
     description: "HIIT workout with Hustle House DFW on the Corona Stage + Lawn.",
-    type: "HIIT",
+    type: "hiit",
     link: "https://www.grandscape.com/event/sunset-fitness-hiit-with-hustle-house-4/2026-09-09/"
   },
   {
@@ -67,7 +65,6 @@ const events = [
     type: "pilates",
     link: "https://speakeasygo.com/The-Datey/Ladies-Datey-Dallas-%7C-O2?eid=EVE-QM6GUN"
   },
-
   {
     date: "THU, SEP 10",
     title: "28th Annual Katy 5K",
@@ -101,7 +98,6 @@ const events = [
     type: "sports",
     link: "https://www.tickettailor.com/events/sidelinesociete/2363020"
   },
-
   {
     date: "FRI, SEP 11",
     title: "Spike & Sip Social",
@@ -113,7 +109,6 @@ const events = [
     type: "sports",
     link: "https://www.eventbrite.com/e/spike-sip-social-sep-11-tickets-1998519219785"
   },
-
   {
     date: "SAT, SEP 12",
     title: "Pray N Run Club",
@@ -207,7 +202,6 @@ function renderEvents() {
       </div>
 
       <div class="event-body">
-
         <span class="event-category">${event.category}</span>
 
         <h3>${event.title}</h3>
@@ -232,26 +226,37 @@ if (eventGrid) {
   renderEvents();
 }
 
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearElement = document.getElementById("year");
+
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear();
+}
 
 const menuToggle = document.querySelector(".menu-toggle");
 const mainNav = document.querySelector(".main-nav");
 
-menuToggle.addEventListener("click", () => {
-  const isOpen = mainNav.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
-});
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = mainNav.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}
 
 document.querySelectorAll(".main-nav a").forEach(link => {
   link.addEventListener("click", () => {
-    mainNav.classList.remove("open");
-    menuToggle.setAttribute("aria-expanded", "false");
+    if (mainNav && menuToggle) {
+      mainNav.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    }
   });
 });
 
-document.getElementById("signup-form").addEventListener("submit", (event) => {
-  event.preventDefault();
-  alert("Thanks for joining the weekly finds! Connect this form to your email service before launch.");
-});
-```
+const signupForm = document.getElementById("signup-form");
 
+if (signupForm) {
+  signupForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    alert("Thanks for joining the weekly finds! Connect this form to your email service before launch.");
+  });
+}
+```
