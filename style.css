@@ -959,3 +959,46 @@ a {
     margin-bottom: 5px;
   }
 }
+
+.about-section {
+  background: #f1e1dd;
+  padding: 100px 24px;
+  text-align: center;
+}
+
+.about-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.about-section .eyebrow {
+  margin-bottom: 18px;
+}
+
+.about-section h2 {
+  margin: 0 0 30px;
+  font-size: clamp(32px, 5vw, 54px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.about-section h2 em {
+  display: block;
+  margin-top: 8px;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+}
+
+.about-copy {
+  max-width: 650px;
+  margin: 0 auto 18px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about-signature {
+  margin-top: 32px;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-style: italic;
+}
