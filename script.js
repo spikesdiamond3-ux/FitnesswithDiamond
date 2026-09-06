@@ -190,11 +190,7 @@ const events = [
 
 const eventGrid = document.getElementById("event-grid");
 
-if (!eventGrid) {
-  console.error("Event grid not found.");
-}
-
-function renderEvents() {
+if (eventGrid) {
   eventGrid.innerHTML = events.map(event => `
     <article class="event-card">
       <div class="event-image ${event.type}">
@@ -220,10 +216,6 @@ function renderEvents() {
       </div>
     </article>
   `).join("");
-}
-
-if (eventGrid) {
-  renderEvents();
 }
 
 const yearElement = document.getElementById("year");
@@ -254,9 +246,8 @@ document.querySelectorAll(".main-nav a").forEach(link => {
 const signupForm = document.getElementById("signup-form");
 
 if (signupForm) {
-  signupForm.addEventListener("submit", (event) => {
+  signupForm.addEventListener("submit", event => {
     event.preventDefault();
     alert("Thanks for joining the weekly finds! Connect this form to your email service before launch.");
   });
 }
-```
