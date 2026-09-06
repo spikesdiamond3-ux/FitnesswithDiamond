@@ -225,8 +225,53 @@ const events = [
 
 const eventGrid = document.getElementById("event-grid");
 
-if (eventGrid) {
-  eventGrid.innerHTML = events.map(event => `
+/* ---------------------------------
+   RENDER EVENTS
+--------------------------------- */
+
+function renderEvents(filter = "all") {
+  if (!eventGrid) return;
+
+  let filteredEvents = events;
+
+  if (filter === "fitness") {
+    filteredEvents = events.filter(event => event.category === "FITNESS");
+  }
+
+  if (filter === "wellness") {
+    filteredEvents = events.filter(event =>
+      event.category === "WELLNESS"
+    );
+  }
+
+  if (filter === "pilates") {
+    filteredEvents = events.filter(event =>
+      event.category === "PILATES" || event.type === "yoga"
+    );
+  }
+
+  if (filter === "run") {
+    filteredEvents = events.filter(event =>
+      event.category === "RUN"
+    );
+  }
+
+  if (filter === "free") {
+    filteredEvents = events.filter(event =>
+      event.price.toUpperCase() === "FREE"
+    );
+  }
+
+  if (filteredEvents.length === 0) {
+    eventGrid.innerHTML = `
+      <div class="no-events">
+        <p>No events found in this category this week.</p>
+      </div>
+    `;
+    return;
+  }
+
+  eventGrid.innerHTML = filteredEvents.map(event => `
     <article class="event-card">
       <div class="event-image ${event.type}">
         <span class="event-date">${event.date}</span>
@@ -253,11 +298,97 @@ if (eventGrid) {
   `).join("");
 }
 
+/* Show all events when page loads */
+renderEvents();
+
+/* ---------------------------------
+   FILTER LINKS
+--------------------------------- */
+
+document.querySelectorAll("[data-filter]").forEach(link => {
+  link.addEventListener("click", event => {
+    event.preventDefault();
+
+    const filter = link.dataset.filter;
+
+    renderEvents(filter);
+
+    const eventsSection = document.getElementById("events");
+
+    if (eventsSection) {
+      eventsSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+
+    /* Update active navigation state */
+    document.querySelectorAll(".main-nav a").forEach(navLink => {
+      navLink.classList.remove("active");
+    });
+
+    const matchingNav = document.querySelector(
+      `.main-nav a[data-filter="${filter}"]`
+    );
+
+    if (matchingNav) {
+      matchingNav.classList.add("active");
+    }
+
+    /* Close mobile menu */
+    if (mainNav && menuToggle) {
+      mainNav.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+});
+
+/* ---------------------------------
+   VIEW ALL EVENTS
+--------------------------------- */
+
+document.querySelectorAll('a[href="#events"]:not([data-filter])').forEach(link => {
+  link.addEventListener("click", event => {
+    event.preventDefault();
+
+    renderEvents("all");
+
+    const eventsSection = document.getElementById("events");
+
+    if (eventsSection) {
+      eventsSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+
+    document.querySelectorAll(".main-nav a").forEach(navLink => {
+      navLink.classList.remove("active");
+    });
+
+    const thisWeek = document.querySelector(
+      '.main-nav a[data-filter="all"]'
+    );
+
+    if (thisWeek) {
+      thisWeek.classList.add("active");
+    }
+  });
+});
+
+/* ---------------------------------
+   YEAR
+--------------------------------- */
+
 const yearElement = document.getElementById("year");
 
 if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
 }
+
+/* ---------------------------------
+   MOBILE MENU
+--------------------------------- */
 
 const menuToggle = document.querySelector(".menu-toggle");
 const mainNav = document.querySelector(".main-nav");
@@ -278,11 +409,32 @@ document.querySelectorAll(".main-nav a").forEach(link => {
   });
 });
 
+/* ---------------------------------
+   NEWSLETTER
+--------------------------------- */
+
 const signupForm = document.getElementById("signup-form");
 
 if (signupForm) {
   signupForm.addEventListener("submit", event => {
     event.preventDefault();
-    alert("Thanks for joining the weekly finds! Connect this form to your email service before launch.");
+
+    alert(
+      "Thanks for joining the weekly finds! Newsletter signup is coming soon."
+    );
   });
+}
+
+/* ---------------------------------
+   CLEAN INTERNAL URLS
+   Removes ?utm_source=chatgpt.com
+   and other unwanted query strings
+--------------------------------- */
+
+if (window.location.search) {
+  window.history.replaceState(
+    {},
+    document.title,
+    window.location.pathname + window.location.hash
+  );
 }
