@@ -42,7 +42,7 @@ const events = [
     location: "Dallas, TX",
     price: "DONATION BASED",
     description: "Donation-based yoga on the plaza.",
-    type: "pilates",
+    type: "yoga",
     link: "https://www.leclique.net/events"
   },
   {
@@ -53,7 +53,7 @@ const events = [
     location: "Grandscape, The Colony",
     price: "FREE",
     description: "HIIT workout with Hustle House DFW on the Corona Stage + Lawn.",
-    type: "sports",
+    type: "HIIT",
     link: "https://www.grandscape.com/event/sunset-fitness-hiit-with-hustle-house-4/2026-09-09/"
   },
   {
@@ -195,6 +195,10 @@ const events = [
 
 const eventGrid = document.getElementById("event-grid");
 
+if (!eventGrid) {
+  console.error("Event grid not found.");
+}
+
 function renderEvents() {
   eventGrid.innerHTML = events.map(event => `
     <article class="event-card">
@@ -224,7 +228,9 @@ function renderEvents() {
   `).join("");
 }
 
-renderEvents();
+if (eventGrid) {
+  renderEvents();
+}
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
