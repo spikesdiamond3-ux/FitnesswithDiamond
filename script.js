@@ -1,14 +1,3 @@
-```js
-/*
-  FITNESS WITH DIAMOND
-  Weekly event data lives here.
-
-  To update the website each week:
-  1. Change/add the event objects below.
-  2. Save the file.
-  3. Upload/commit it to GitHub.
-*/
-
 const events = [
   {
     date: "MON, SEP 7",
