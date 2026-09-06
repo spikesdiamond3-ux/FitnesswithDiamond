@@ -185,6 +185,41 @@ const events = [
     description: "Hill sprint workout. Meets Saturdays and Sundays.",
     type: "run",
     link: "https://www.instagram.com/dallashillsprints/"
+  },
+
+  /* SUNDAY */
+  {
+    date: "SUN, SEP 13",
+    title: "Dirty 30 Bootcamp",
+    category: "FITNESS",
+    time: "11:00 AM",
+    location: "Design District, Dallas",
+    price: "$30",
+    description: "Strength training, conditioning, boxing, good music, and great energy with Ment Fitness.",
+    type: "hiit",
+    link: "https://buy.stripe.com/dRm00ldqgbrPe0BcI504800?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+  },
+  {
+    date: "SUN, SEP 13",
+    title: "HYROX Sim",
+    category: "FITNESS",
+    time: "7:00–11:00 AM",
+    location: "Manifest Fitness Institute",
+    price: "$23.18",
+    description: "Mock HYROX workout designed to test your strength, endurance, and conditioning.",
+    type: "hiit",
+    link: "https://www.eventbrite.com/e/mock-hyrox-tickets-1999213227581"
+  },
+  {
+    date: "SUN, SEP 13",
+    title: "Pilates in the Park",
+    category: "PILATES",
+    time: "9:00 AM",
+    location: "Dallas, TX",
+    price: "FREE",
+    description: "Outdoor Pilates in the park with Oak Cliff Pilates.",
+    type: "pilates",
+    link: "https://oakcliffpilates.com/events/"
   }
 ];
 
