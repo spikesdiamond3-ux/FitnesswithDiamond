@@ -32,6 +32,10 @@ a {
   text-decoration: none;
 }
 
+/* =========================
+   HEADER
+========================== */
+
 .site-header {
   position: sticky;
   top: 0;
@@ -116,7 +120,10 @@ a {
   background: var(--ink);
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================== */
+
 .hero {
   min-height: 455px;
   position: relative;
@@ -208,7 +215,11 @@ a {
   right: -2%;
   bottom: -10%;
   border-radius: 48% 0 0 0;
-  background: linear-gradient(145deg, rgba(255,255,255,.45), rgba(220,188,180,.45));
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,.45),
+    rgba(220,188,180,.45)
+  );
   transform: rotate(-7deg);
 }
 
@@ -219,7 +230,12 @@ a {
   right: 18%;
   bottom: 7%;
   border-radius: 50% 20% 30% 20%;
-  background: linear-gradient(160deg, #eaccc6, #f7e3df 55%, #d9b7b1);
+  background: linear-gradient(
+    160deg,
+    #eaccc6,
+    #f7e3df 55%,
+    #d9b7b1
+  );
   transform: rotate(-8deg);
   box-shadow: 0 15px 25px rgba(150,110,100,.12);
 }
@@ -251,7 +267,12 @@ a {
   left: 21px;
   top: 0;
   border-radius: 10px 10px 5px 5px;
-  background: linear-gradient(90deg, #d4d9c9, #f0f1e7 50%, #c9d0c0);
+  background: linear-gradient(
+    90deg,
+    #d4d9c9,
+    #f0f1e7 50%,
+    #c9d0c0
+  );
 }
 
 .bottle-handle {
@@ -273,7 +294,12 @@ a {
   width: 110px;
   height: 280px;
   border-radius: 36px 36px 24px 24px;
-  background: linear-gradient(90deg, #cdd3c3, #f2f3e8 45%, #c4cbbd);
+  background: linear-gradient(
+    90deg,
+    #cdd3c3,
+    #f2f3e8 45%,
+    #c4cbbd
+  );
   box-shadow: 10px 12px 25px rgba(80,80,65,.16);
   display: flex;
   flex-direction: column;
@@ -318,7 +344,10 @@ a {
   opacity: .28;
 }
 
-/* GENERAL SECTIONS */
+/* =========================
+   GENERAL SECTIONS
+========================== */
+
 .section {
   max-width: 1260px;
   margin: 0 auto;
@@ -354,6 +383,10 @@ a {
   margin-left: 5px;
 }
 
+/* =========================
+   EVENTS
+========================== */
+
 .event-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -365,7 +398,9 @@ a {
   background: white;
   box-shadow: var(--shadow);
   overflow: hidden;
-  transition: transform .2s ease, box-shadow .2s ease;
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
 }
 
 .event-card:hover {
@@ -384,7 +419,11 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, #dbe7d8, #f3dcd7);
+  background: linear-gradient(
+    135deg,
+    #dbe7d8,
+    #f3dcd7
+  );
 }
 
 .event-image.walk::after {
@@ -475,7 +514,9 @@ a {
   letter-spacing: .05em;
   font-weight: 700;
 }
+
 /* EVENT CATEGORY LABEL */
+
 .event-category {
   display: inline-block;
   margin-bottom: 8px;
@@ -489,7 +530,10 @@ a {
   line-height: 1;
 }
 
-/* CATEGORIES */
+/* =========================
+   CATEGORIES
+========================== */
+
 .movement-section {
   background: var(--sage);
 }
@@ -544,7 +588,10 @@ a {
   line-height: 1.5;
 }
 
-/* FREE SECTION */
+/* =========================
+   FREE EVENTS
+========================== */
+
 .free-section {
   min-height: 205px;
   background: var(--blush);
@@ -565,7 +612,13 @@ a {
   height: 100%;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(#8caeb5 0%, #d7e2dc 55%, #90a878 55%, #4f714e 100%);
+  background:
+    linear-gradient(
+      #8caeb5 0%,
+      #d7e2dc 55%,
+      #90a878 55%,
+      #4f714e 100%
+    );
 }
 
 .tower {
@@ -653,7 +706,10 @@ a {
   transform: rotate(-8deg);
 }
 
-/* NEWSLETTER */
+/* =========================
+   NEWSLETTER
+========================== */
+
 .newsletter {
   background: var(--sage);
 }
@@ -663,7 +719,7 @@ a {
   margin: 0 auto;
   padding: 27px 34px;
   display: grid;
-  grid-template-columns: 75px 1fr 1.2fr;
+  grid-template-columns: 75px 1fr auto;
   align-items: center;
   gap: 20px;
 }
@@ -696,28 +752,16 @@ a {
   font-size: 11px;
 }
 
-.signup-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr auto;
-  gap: 10px;
-}
-
-.signup-form input {
-  min-width: 0;
-  border: 0;
-  padding: 12px;
-  font-family: inherit;
-  font-size: 11px;
-  outline: none;
-}
-
 .button-sage {
   background: #8b9d78;
   color: white;
   white-space: nowrap;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================== */
+
 .site-footer {
   max-width: 1260px;
   margin: 0 auto;
@@ -727,14 +771,32 @@ a {
   gap: 35px;
 }
 
-.footer-brand .brand-name {
-  font-size: 17px;
+/* Footer brand */
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.footer-brand .brand-tagline {
-  font-size: 21px;
-  margin-left: 0;
+.footer-brand .footer-name {
+  font-size: 17px;
+  letter-spacing: .08em;
+  font-weight: 500;
+  line-height: 1.2;
 }
+
+.footer-brand .footer-tagline {
+  margin: 4px 0 0;
+  color: var(--blush-dark);
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: 21px;
+  line-height: 1.1;
+}
+
+/* Footer columns */
+
 .footer-column {
   display: flex;
   flex-direction: column;
@@ -765,8 +827,12 @@ a {
   color: #888;
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================== */
+
 @media (max-width: 1050px) {
+
   .brand {
     min-width: 300px;
   }
@@ -789,6 +855,7 @@ a {
 }
 
 @media (max-width: 760px) {
+
   .site-header {
     position: sticky;
   }
@@ -843,6 +910,8 @@ a {
     display: none;
   }
 
+  /* Hero */
+
   .hero {
     min-height: 570px;
   }
@@ -878,6 +947,8 @@ a {
     display: none;
   }
 
+  /* Sections */
+
   .section,
   .narrow {
     padding-left: 20px;
@@ -893,6 +964,8 @@ a {
     font-size: 15px;
   }
 
+  /* Events */
+
   .event-grid {
     grid-template-columns: 1fr;
   }
@@ -900,6 +973,8 @@ a {
   .event-image {
     height: 205px;
   }
+
+  /* Categories */
 
   .category-grid {
     grid-template-columns: 1fr 1fr;
@@ -919,6 +994,8 @@ a {
     border-bottom: 0;
   }
 
+  /* Free section */
+
   .free-section {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -933,20 +1010,19 @@ a {
     display: none;
   }
 
+  /* Newsletter */
+
   .newsletter-inner {
     grid-template-columns: 60px 1fr;
     padding: 25px 20px;
   }
 
-  .signup-form {
+  .newsletter-inner .button {
     grid-column: 1 / -1;
-    grid-template-columns: 1fr;
-  }
-
-  .signup-form input,
-  .signup-form button {
     width: 100%;
   }
+
+  /* Footer */
 
   .site-footer {
     grid-template-columns: 1fr 1fr;
@@ -957,7 +1033,19 @@ a {
     grid-column: 1 / -1;
     margin-bottom: 5px;
   }
+
+  .footer-brand .footer-name {
+    font-size: 15px;
+  }
+
+  .footer-brand .footer-tagline {
+    font-size: 20px;
+  }
 }
+
+/* =========================
+   ABOUT
+========================== */
 
 .about-section {
   background: #f1e1dd;
