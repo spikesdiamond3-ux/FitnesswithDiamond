@@ -1035,12 +1035,12 @@ a {
   }
 
   .footer-brand .footer-name {
-    font-size: 15px;
-  }
+  font-size: 17px;
+}
 
-  .footer-brand .footer-tagline {
-    font-size: 20px;
-  }
+.footer-brand .footer-tagline {
+  font-size: 21px;
+  margin-left: 0;
 }
 
 /* =========================
