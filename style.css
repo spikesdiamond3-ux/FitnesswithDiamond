@@ -733,9 +733,8 @@ a {
 
 .footer-brand .brand-tagline {
   font-size: 21px;
-  margin-left: 40px;
+  margin-left: 0;
 }
-
 .footer-column {
   display: flex;
   flex-direction: column;
