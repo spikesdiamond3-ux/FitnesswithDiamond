@@ -1,225 +1,180 @@
 const events = [
   {
-    date: "MON, SEP 7",
+    date: "MON, SEP 14",
+    title: "Ghost Mammoth",
+    category: "SOCIAL",
+    time: "6:00–9:00 PM",
+    location: "Dallas Farmers Market",
+    price: "FREE",
+    description: "Monday night pickleball with the Ghost Mammoth community at Dallas Farmers Market.",
+    type: "sports",
+    link: "https://www.instagram.com/ghostmammoth.pb?stkn=MWNkdnkzNGJhZGl3dA=="
+  },
+
+  /* TUESDAY */
+  {
+    date: "TUE, SEP 15",
+    title: "Sweat440",
+    category: "FITNESS",
+    time: "6:30 PM",
+    location: "The Shed, Dallas Farmers Market",
+    price: "FREE",
+    description: "Community workout with Sweat440 at The Shed in Dallas Farmers Market.",
+    type: "hiit",
+    link: "https://www.eventbrite.com/e/sweat440-community-workout-series-tickets-1991837201689"
+  },
+  {
+    date: "TUE, SEP 15",
+    title: "Pilates Caliente",
+    category: "PILATES",
+    time: "6:00 PM",
+    location: "Four Corners Brewery",
+    price: "$26",
+    description: "A Pilates Caliente Pickleball & Sculpt experience at Four Corners Brewery.",
+    type: "pilates",
+    link: "https://app.arketa.co/httpscalendlycompilatescalientedallas?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+  },
+
+  /* WEDNESDAY */
+  {
+    date: "WED, SEP 16",
+    title: "Breakthrough T1D",
+    category: "WALK",
+    time: "5:00 PM",
+    location: "Dave & Buster's, 9450 N Central Expy",
+    price: "SEE EVENT DETAILS",
+    description: "Dallas Walk kickoff featuring great food, friendly competition, laughs, and meaningful connections.",
+    type: "run",
+    link: "https://www.breakthrought1d.org/dallasfortworth/events/dallas-walk-kick-off-at-dave-busters/"
+  },
+  {
+    date: "WED, SEP 16",
+    title: "Crunch Fitness",
+    category: "FITNESS",
+    time: "5:00 PM",
+    location: "Central Forest, 11615 N Central Expy",
+    price: "FREE",
+    description: "Football-themed mid-month party featuring food, fun, and fitness.",
+    type: "sports",
+    link: "https://facebook.com/events/s/football-themed-mid-month-part/1506155394648824/"
+  },
+  {
+    date: "WED, SEP 16",
+    title: "DFW Young & Social",
+    category: "WELLNESS",
+    time: "7:15 PM",
+    location: "Dallas, TX",
+    price: "FREE / DONATIONS",
+    description: "Free Hatha yoga focused on strength and mobility. Weekly rotating focus includes balance, hips, upper body, and core & back.",
+    type: "yoga",
+    link: "https://www.eventbrite.com/e/free-hatha-yoga-class-strength-mobility-tickets-1285235547119"
+  },
+
+  /* THURSDAY */
+  {
+    date: "THU, SEP 17",
+    title: "Neon Cycle & Strength",
+    category: "FITNESS",
+    time: "6:45 PM",
+    location: "Plano, TX",
+    price: "$10",
+    description: "Spin Happy Hour at Neon Cycle & Strength. Create an account and purchase the first-time $10 deal to book.",
+    type: "sports",
+    link: "https://www.neonstrong.com/team-neon/"
+  },
+
+  /* FRIDAY */
+  {
+    date: "FRI, SEP 18",
+    title: "Avant-Chamber Ballet",
+    category: "PILATES",
+    time: "7:00 PM",
+    location: "Halperin Park",
+    price: "FREE",
+    description: "Beginner Pilates and classical mat Pilates experience with Avant-Chamber Ballet.",
+    type: "pilates",
+    link: "https://www.instagram.com/avantchamberballet/"
+  },
+
+  /* SATURDAY */
+  {
+    date: "SAT, SEP 19",
+    title: "BFit Cardio Dance",
+    category: "FITNESS",
+    time: "8:30 AM",
+    location: "Mark Cuban Heroes",
+    price: "SEE EVENT DETAILS",
+    description: "High-energy cardio dance workout with BFit Cardio Dance.",
+    type: "sports",
+    link: "https://www.instagram.com/bfit_cardiodance?stkn=cGVmdG01bHdobmFp"
+  },
+  {
+    date: "SAT, SEP 19",
+    title: "FAME FEST",
+    category: "WELLNESS",
+    time: "8:00 AM",
+    location: "Omni Las Colinas",
+    price: "$55–69",
+    description: "A full morning-to-afternoon wellness experience featuring 5+ curated fitness experiences across multiple formats.",
+    type: "sports",
+    link: "https://www.eventbrite.com/e/fame-fest-2026-a-wellness-experience-at-omni-las-colinas-tickets-1992390335126"
+  },
+  {
+    date: "SAT, SEP 19",
     title: "Run It Up Dallas",
     category: "RUN",
+    time: "8:00 AM",
+    location: "Dallas, TX",
+    price: "$30–35",
+    description: "Mission: Possible Body Fit 5K Run or 1 Mile Fun Walk with Run It Up Dallas.",
+    type: "run",
+    link: "https://christinasfoundation.org/5k/"
+  },
+  {
+    date: "SAT, SEP 19",
+    title: "Ment Fitness",
+    category: "FITNESS",
     time: "8:30 AM",
-    location: "Katy Trail, Dallas",
+    location: "NorthPark Center",
     price: "FREE",
-    description: "Morning social run on the Katy Trail.",
-    type: "run",
-    link: "https://www.instagram.com/runitup_dallas/"
-  },
-  {
-    date: "MON, SEP 7",
-    title: "Athletic Fitness Bootcamp",
-    category: "FITNESS",
-    time: "10:30 AM",
-    location: "Plano, TX",
-    price: "$25.02",
-    description: "Athletic fitness bootcamp designed to boost strength, endurance, and overall fitness. Price is for you and a friend.",
+    description: "Outdoor workout with Ment Fitness featuring a Fabletics pop-up at NorthPark Center.",
     type: "sports",
-    link: "https://www.eventbrite.com/e/athletic-fitness-bootcamp-labor-day-tickets-1999256984459"
+    link: "https://www.eventbrite.com/e/free-workout-with-ment-fitness-hosted-by-fabletics-northpark-center-tickets-1998504861840"
   },
   {
-    date: "TUE, SEP 8",
-    title: "Volleyball Social",
-    category: "SOCIAL",
-    time: "7:30 PM",
-    location: "Dallas, TX",
-    price: "$5",
-    description: "Volleyball social with music, refreshments, and a chance to meet new people.",
+    date: "SAT, SEP 19",
+    title: "DFW Girlies Club",
+    category: "SPORTS",
+    time: "SEE EVENT DETAILS",
+    location: "Madison Ace Sports",
+    price: "$30",
+    description: "Women's tennis clinic featuring private coaching, a racket, and tennis balls.",
     type: "sports",
-    link: "https://linktr.ee/FemmeF0rward"
-  },
-  {
-    date: "WED, SEP 9",
-    title: "Yoga on the Plaza",
-    category: "WELLNESS",
-    time: "6:00 PM",
-    location: "Dallas, TX",
-    price: "DONATION BASED",
-    description: "Donation-based yoga on the plaza.",
-    type: "yoga",
-    link: "https://www.leclique.net/events"
-  },
-  {
-    date: "WED, SEP 9",
-    title: "Sunset Fitness HIIT",
-    category: "FITNESS",
-    time: "6:30–7:30 PM",
-    location: "Grandscape, The Colony",
-    price: "FREE",
-    description: "HIIT workout with Hustle House DFW on the Corona Stage + Lawn.",
-    type: "hiit",
-    link: "https://www.grandscape.com/event/sunset-fitness-hiit-with-hustle-house-4/2026-09-09/"
-  },
-  {
-    date: "WED, SEP 9",
-    title: "Ladies Datey",
-    category: "SOCIAL",
-    time: "7:00 PM",
-    location: "O2, Dallas",
-    price: "$44.97",
-    description: "45-minute mat Pilates class with goodie bags and a cocktail tasting mixer.",
-    type: "pilates",
-    link: "https://speakeasygo.com/The-Datey/Ladies-Datey-Dallas-%7C-O2?eid=EVE-QM6GUN"
-  },
-  {
-    date: "THU, SEP 10",
-    title: "28th Annual Katy 5K",
-    category: "RUN",
-    time: "7:30 PM",
-    location: "Reverchon Park, Dallas",
-    price: "$75",
-    description: "The 28th annual Katy 5K. Registration required.",
-    type: "run",
-    link: "https://raceroster.com/events/2026/112103/28th-annual-katy-5k-presented-by-michelob-ultra"
-  },
-  {
-    date: "THU, SEP 10",
-    title: "Hot Girls Stride",
-    category: "RUN",
-    time: "7:00 PM",
-    location: "Grand Prairie, TX",
-    price: "FREE",
-    description: "Social run with the Hot Girls Stride community.",
-    type: "run",
-    link: "https://linktr.ee/HotGirlStridee"
-  },
-  {
-    date: "THU, SEP 10",
-    title: "Girls Just Wanna Have Football",
-    category: "SOCIAL",
-    time: "6:30 PM",
-    location: "Dallas, TX",
-    price: "$50–$75",
-    description: "49ers vs. Rams watch party with signature drinks, a curated game-day spread, and plenty of football.",
-    type: "sports",
-    link: "https://www.tickettailor.com/events/sidelinesociete/2363020"
-  },
-  {
-    date: "FRI, SEP 11",
-    title: "Spike & Sip Social",
-    category: "SOCIAL",
-    time: "6:00 PM",
-    location: "Klyde Warren Park, Dallas",
-    price: "FREE",
-    description: "Open volleyball play and happy hour with Dallas Sports & Social Club.",
-    type: "sports",
-    link: "https://www.eventbrite.com/e/spike-sip-social-sep-11-tickets-1998519219785"
-  },
-  {
-    date: "SAT, SEP 12",
-    title: "Pray N Run Club",
-    category: "RUN",
-    time: "6:30 AM",
-    location: "West Fort Worth",
-    price: "SEE EVENT DETAILS",
-    description: "Community pickleball and 5K event.",
-    type: "run",
-    link: "https://partiful.com/e/NiC65qp5f7LPCJkSNCpj"
-  },
-  {
-    date: "SAT, SEP 12",
-    title: "Hustle Hill",
-    category: "RUN",
-    time: "8:00 AM",
-    location: "Irving, TX",
-    price: "FREE",
-    description: "Free community run held every Saturday.",
-    type: "run",
-    link: "https://linktr.ee/hustlehilldallas"
-  },
-  {
-    date: "SAT, SEP 12",
-    title: "Pilates in the Park",
-    category: "PILATES",
-    time: "9:00 AM",
-    location: "Griggs Park, Dallas",
-    price: "FREE",
-    description: "Outdoor Pilates with Pilates 214. Held every Saturday.",
-    type: "pilates",
-    link: "https://www.instagram.com/pilates214/"
-  },
-  {
-    date: "SAT, SEP 12",
-    title: "Pilates in the Park",
-    category: "PILATES",
-    time: "9:00 AM",
-    location: "Cypress Waters",
-    price: "FREE",
-    description: "High-intensity, cardio-infused Pilates built for all levels.",
-    type: "pilates",
-    link: "https://www.eventbrite.com/e/carries-pilates-in-the-park-cypress-waters-series-tickets-1989437134022"
-  },
-  {
-    date: "SAT, SEP 12",
-    title: "Kota Wellness Pilates",
-    category: "PILATES",
-    time: "9:30 AM",
-    location: "Marriott Dallas Uptown",
-    price: "FREE",
-    description: "Saturday morning Pilates on the plaza. Held every Saturday through October 3rd.",
-    type: "pilates",
-    link: "https://www.eventbrite.com/e/saturday-morning-pilates-on-the-plaza-tickets-1999112516351"
-  },
-  {
-    date: "SAT, SEP 12",
-    title: "Epic FIT Fest",
-    category: "FITNESS",
-    time: "8:00 AM",
-    location: "Elite Performance Training, Irving",
-    price: "$65",
-    description: "A fitness, wellness, community, and shopping experience hosted by Black Girl Fit.",
-    type: "sports",
-    link: "https://events.eventnoire.com/e/epic-fit-fest-2026-the-ultimate-wellness-experienc/tickets"
-  },
-  {
-    date: "SAT, SEP 12",
-    title: "Dallas Hill Sprints",
-    category: "RUN",
-    time: "11:30 AM",
-    location: "Townview High School, Dallas",
-    price: "SEE EVENT DETAILS",
-    description: "Hill sprint workout. Meets Saturdays and Sundays.",
-    type: "run",
-    link: "https://www.instagram.com/dallashillsprints/"
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSce6t3sLNuN6AanlX2z3Rdv74IfG0Nt6C6UfkhwfigCCUKFew/viewform"
   },
 
   /* SUNDAY */
   {
-    date: "SUN, SEP 13",
-    title: "Dirty 30 Bootcamp",
-    category: "FITNESS",
+    date: "SUN, SEP 20",
+    title: "ZP Productions",
+    category: "WELLNESS",
     time: "11:00 AM",
-    location: "Design District, Dallas",
-    price: "$30",
-    description: "Strength training, conditioning, boxing, good music, and great energy with Ment Fitness.",
-    type: "hiit",
-    link: "https://buy.stripe.com/dRm00ldqgbrPe0BcI504800?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+    location: "Chicken N Pickle, Allen",
+    price: "$75",
+    description: "Move Your Body wellness pop-up at Chicken N Pickle in Allen.",
+    type: "sports",
+    link: "https://posh.vip/e/move-your-body-a-wellness-popup-at-chicken-pickle?utm_source=ig&utm_medium=social&utm_content=link_in_bio"
   },
   {
-    date: "SUN, SEP 13",
-    title: "HYROX Sim",
+    date: "SUN, SEP 20",
+    title: "Sweat440",
     category: "FITNESS",
-    time: "7:00–11:00 AM",
-    location: "Manifest Fitness Institute",
-    price: "$23.18",
-    description: "Mock HYROX workout designed to test your strength, endurance, and conditioning.",
-    type: "hiit",
-    link: "https://www.eventbrite.com/e/mock-hyrox-tickets-1999213227581"
-  },
-  {
-    date: "SUN, SEP 13",
-    title: "Pilates in the Park",
-    category: "PILATES",
-    time: "9:00 AM",
-    location: "Dallas, TX",
+    time: "10:35 AM CHECK-IN",
+    location: "Klyde Warren Park",
     price: "FREE",
-    description: "Outdoor Pilates in the park with Oak Cliff Pilates.",
-    type: "pilates",
-    link: "https://oakcliffpilates.com/events/"
+    description: "Free Sunday community workout with Sweat440 at Klyde Warren Park.",
+    type: "hiit",
+    link: "https://www.eventbrite.com/e/sweat440-community-workout-series-tickets-1991837201689"
   }
 ];
 
