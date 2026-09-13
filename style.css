@@ -1038,14 +1038,16 @@ a {
   font-size: 17px;
 }
 
-.footer-brand .footer-tagline {
-  font-size: 21px;
-  margin-left: 0;
-}
+.footer-brand .footer-tagline { 
+  font-size: 21px; 
+  margin-left: 0; 
+} 
 
-/* =========================
-   ABOUT
-========================== */
+} /* END MOBILE */
+
+/* ========================= 
+   ABOUT 
+========================== */ 
 
 .about-section {
   background: #f1e1dd;
