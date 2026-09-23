@@ -177,11 +177,11 @@ const events = [
   },
   {
     date: "SAT, SEP 26",
-    title: "Solid Core & Soft Launch Pop-Up",
+    title: " Blank Haus x Soft Launch Pop-Up",
     category: "WELLNESS",
-    time: "12:00–5:00 PM",
-    location: "Solidcore Plano",
-    price: "FREE",
+    time: "9:00–12:30 PM",
+    location: "650 Fort Worth Ave #135",
+    price: "$9 a cup",
     description: "Wellness pop-up featuring low-calorie, high-protein soft serve. You do not have to take a class to attend.",
     type: "sports",
     link: "https://www.instagram.com/softlaunchicecream?stkn=MTcxeng2cXJtZ2NjYQ=="
