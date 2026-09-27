@@ -1,269 +1,181 @@
 const events = [
   /* MONDAY */
   {
-    date: "MON, SEP 21",
-    title: "JC's Boxing Academy",
-    category: "FITNESS",
-    time: "6:00 AM / 9:00 AM",
-    location: "Lewisville, TX",
-    price: "$7.18",
-    description: "Morning Group Class at JC's Boxing Academy.",
-    type: "sports",
-    link: "https://www.eventbrite.com/e/morning-group-class-tickets-1409560004919?aff=ebdsshcopyurl&utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=&utm-share-source=mobile-search-results"
-  },
-  {
-    date: "MON, SEP 21",
-    title: "BFit Cardio Dance",
-    category: "FITNESS",
-    time: "7:00 PM",
-    location: "Kumbala Dance Studio",
-    price: "$13.54",
-    description: "BFit Cardio Dance Mondays.",
-    type: "sports",
-    link: "https://www.eventbrite.com/e/bfit-cardio-dance-mondays-tickets-1983900954159?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=wsa&aff=ebdsshwebmobile"
+    date: "MON, SEP 28",
+    title: "Stay in the Game: The Workshop for Competitive Athletes",
+    category: "WELLNESS",
+    time: "6:30 PM",
+    location: "Palmercare Chiropractic, Fort Worth, TX",
+    price: "FREE",
+    description: "Learn practical strategies to reduce injury risk, recover when injuries happen, and return to activity stronger.",
+    type: "fitness",
+    link: "https://www.eventbrite.com/e/stay-in-the-game-the-workshop-for-competitive-athletes-tickets-2002094115394?aff=ebdsoporgprofile"
   },
 
   /* TUESDAY */
   {
-    date: "TUE, SEP 22",
-    title: "The YMCA & Downtown Dallas",
-    category: "SPORTS",
-    time: "7:00–9:00 PM",
-    location: "Harwood Park",
-    price: "$45 INDIVIDUAL / $239 TEAM",
-    description: "Adult kickball league running for six weeks, with games played Tuesday or Wednesday nights. Teams can have up to 14 players.",
+    date: "TUE, SEP 29",
+    title: "Boxing Fundamentals",
+    category: "FITNESS",
+    time: "7:00 PM",
+    location: "Flexy Fitness",
+    price: "$16.43",
+    description: "Learn real boxing technique, burn calories, and boost your cardio.",
     type: "sports",
-    link: "https://dallas.recliquecore.com/programs/82513998/?locations=19"
+    link: "https://www.eventbrite.com/e/boxing-fundamentals-tickets-1987206815078?aff=ebdssbdestsearch"
   },
 
   /* WEDNESDAY */
   {
-    date: "WED, SEP 23",
-    title: "Fit Swank",
-    category: "YOGA",
-    time: "6:00 PM",
-    location: "Arlington, TX",
-    price: "$15",
-    description: "Stillness Yoga & Sound Bowl featuring yoga flow and intentional breathwork, followed by a peaceful sound bowl experience designed to help you slow down, reset, and reconnect. Beginner friendly and modifiable for higher fitness levels.",
-    type: "yoga",
-    link: "https://na.spatime.com/loews9172/4807805/activity/activity-view/60251499?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUcGCRwZG9mAmZkaWQWUOxmm4SdusHCGu1mMe3BpK0O-oiV_mV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABpyjGXI0ZtDldHGzCaDGc9gXGUSm15QKUeEEOWdf8My7sf0dvSW5Nd2AxuMat_aem_3ZD6DERtUd3cPbmP76MHpw&utm_id=97760_v0_s00_e0_tv3"
-  },
-  {
-    date: "WED, SEP 23",
-    title: "Golf Like a Girl",
-    category: "SPORTS",
-    time: "5:00 PM",
-    location: "2nd Swing Golf, The Colony",
-    price: "$50",
-    description: "Golf experience taught by LPGA/PGA professional Megan Buzza. Proceeds go toward free mother/daughter golf lessons.",
-    type: "sports",
-    link: "https://givebutter.com/GLGxTX923W"
+    date: "WED, SEP 30",
+    title: "Sunset Pilates + Wellness Market",
+    category: "PILATES",
+    time: "5:30–9:00 PM",
+    location: "HG Supply Co., Dallas",
+    price: "SEE EVENT DETAILS",
+    description: "Energizing rooftop Pilates, then head over to explore our post-workout Wellness Market.",
+    type: "pilates",
+    link: "https://www.eventbrite.com/e/rooftop-pilates-wellness-market-in-greenville-tickets-2000659630812?aff=ebdsoporgprofile&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUlSb9leHRuA2FlbQIxMQBwZG9mAmZkaWQWUPPKU9PjzZs8LEOT6WKbh0iQcE9xKXNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp80kVaP5VzwtMH80Z2exv5tH0tYcODJ2DrvZ7g8DDui0pMt_a7_pNkTq-w9I_aem_v8fjIjYpZaIMEuqz9VLYuQ"
   },
 
   /* THURSDAY */
   {
-    date: "THU, SEP 24",
-    title: "Resilience Project Non Profit",
-    category: "FITNESS",
-    time: "6:30 PM",
-    location: "Toyota Music Factory",
+    date: "THU, OCT 1",
+    title: "Sis, Let's Stroll Walking Club",
+    category: "WALK",
+    time: "SEE EVENT DETAILS",
+    location: "Dogwood Canyon Audubon Center",
     price: "FREE",
-    description: "Commit 2 the Hit with a hydration station, ice-cold water, cold towels, and a mister to cool you down. All fitness levels are welcome, with a live DJ and a healthy community atmosphere.",
-    type: "hiit",
-    link: "https://www.eventbrite.com/e/commit2hiit-92426-tickets-1999532959909?aff=oddtdtcreator&keep_tld=true&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUcJetwZG9mAmZkaWQWUOzEG-8yh_305m0DX0IrU-e0ywSjV2V4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp7KkuhAlYi_eywi2gL4YCrsW-XXc-O0JpNaGNp13hWce-Xo9TYKR8Mg6PerS_aem_6zPXb5rfar3Do9TbupT1Dg"
+    description: "A weekly walking experience created just for Black and Brown women in South Dallas.",
+    type: "run",
+    link: "https://www.eventbrite.com/e/sis-lets-stroll-walking-club-tickets-1986041576819?aff=ebdssbdestsearch"
   },
 
   /* FRIDAY */
   {
-    date: "FRI, SEP 25",
-    title: "Afro Pickle Ball",
-    category: "SPORTS",
-    time: "8:00 PM",
-    location: "Paddle Club",
-    price: "$10",
-    description: "Open play pickleball with a live DJ.",
-    type: "sports",
-    link: "https://paddleclub.podplay.app/community/events/01a0533b-4147-755d-96e4-b4411d58b7c9?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUcKGJwZG9mAmZkaWQWUOw8GNCBl8Rg3NYLkwjoVf3mZY7s3WV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABpwtScOl0e_Zf48D6HtX1CBnazp8woS5DYv1_cDvHMa3ZC6zTcmdMUj5L3V6f_aem_BlkFcBN6DXIxyDj4wXE0fA&utm_id=97760_v0_s00_e0_tv3"
+    date: "FRI, OCT 2",
+    title: "Sound Bath",
+    category: "WELLNESS",
+    time: "12:15 PM",
+    location: "Forme Pilates",
+    price: "FREE CLASS • WAITLIST",
+    description: "A sound bath experience at Forme Pilates. Currently waitlisted.",
+    type: "yoga",
+    link: "https://www.formesculpt.com/schedule?_mt=%2Fclasses%2F12955%2Freserve%2F"
   },
   {
-    date: "FRI, SEP 25",
-    title: "The Third Space & Instructor Kendra",
-    category: "YOGA",
-    time: "7:00 PM",
-    location: "Addison, TX",
-    price: "$25",
-    description: "After Hours: R&B Yoga & Flow with mocktails. A portion of proceeds supports women in need of dental care and feminine hygiene products.",
-    type: "yoga",
-    link: "https://www.eventbrite.com/e/after-hours-rb-yoga-flow-registration-1999219797231?aff=oddtdtcreator&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUcObZwZG9mAmZkaWQWUOxgTVaz1nx3zOdTxoBr4GjyzuO9q2V4dG4DYWVtAjExAHNydGMGYXBpDzEyNDAyNDU3NDI4NzQxNAABp4EH9bXwU1-PKLbF-girgN4kf2hodPFJcBcXrgRB-XsE3kGa3KtKzOkdARHa_aem_Cu-gCihRLBo5152EZYg6ew&keep_tld=true"
+    date: "FRI, OCT 2",
+    title: "Pomp & Pucks",
+    category: "SPORTS",
+    time: "6:30 PM DINNER / 8:00 PM PUCK DROP",
+    location: "Urban Italia + American Airlines Center",
+    price: "SEE TICKET DETAILS",
+    description: "An intimate live-game experience from The Sideline Société, the social club for women who love sports. Pregame dinner at Urban Italia followed by puck drop at American Airlines Center.",
+    type: "sports",
+    link: "https://www.tickettailor.com/events/sidelinesociete/2422920?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUlaOpleHRuA2FlbQIxMQBwZG9mAmZkaWQWUPN6zE7RyTPPfUrAymr8Ml995vJkb3NydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp3aQ-5f10K7KRBtxeEGJzvb1FtYHIq040ZsB-PrJ1KkFKFrxdTet9ECpV6As_aem_LYCw4s6EeTl5gD_uFky5gw"
+  },
+  {
+    date: "FRI, OCT 2",
+    title: "The Dallas Cup",
+    category: "SPORTS",
+    time: "6:30 PM",
+    location: "Brookhaven Country Club Ballroom",
+    price: "$75",
+    description: "Party and tournament fundraiser featuring live music, food and drinks, casino games and prizes, a live auction, and a 50/50 raffle.",
+    type: "sports",
+    link: "https://www.zeffy.com/en-US/ticketing/2026-dallas-cup-friday-party?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUmN_hleHRuA2FlbQIxMQBwZG9mAmZkaWQWUPOUDp5uG3h_tABfJ2ItSQDX_i-_qHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp3uGCl7FyR2AiEDsHL7-pxTiOZqrF4onntEj0ePcMF4F2xtisZWkYAy6_iGf_aem_jP2fehiMuVSihBSfiO43_g"
   },
 
   /* SATURDAY */
   {
-    date: "SAT, SEP 26",
-    title: "The Creatives Juices Group",
-    category: "PILATES",
-    time: "2:00 PM",
-    location: "Strong Pilates, Mockingbird Station",
-    price: "$47.16",
-    description: "Pilates & Profit: guided Pilates by Johanna, conversations, light refreshments, and a swag bag. An intimate experience for creatives, entrepreneurs, and professionals ready to slow down, become more intentional, and reconnect through movement.",
-    type: "pilates",
-    link: "https://www.eventbrite.com/e/pilates-profits-tickets-1997004205336?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=wsa&aff=ebdsshwebmobile"
-  },
-  {
-    date: "SAT, SEP 26",
-    title: "Social House & MNSR Athletics",
-    category: "SPORTS",
-    time: "2:00 PM",
-    location: "Paddle Club",
-    price: "$20",
-    description: "Pickleball Social — an afternoon built around movement, wellness, competition, and community.",
-    type: "sports",
-    link: "https://www.gatekeepers.app/events/pickleball-social-social-house-x-mnsr-athletics-3a658a?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUcG3dwZG9mAmZkaWQWUOxcYnnKkckgqIqQByUc5RmChFB4zGV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp-a0uv9Hxtfy7dXO-hKq09PMZtrlq_fp4cW7ha8qZgk_UVALqn0XghJLM_r8_aem_sgrSDQWgpi9C_3zNp7goNg"
-  },
-  {
-    date: "SAT, SEP 26",
-    title: "Pulse Pilates",
-    category: "PILATES",
-    time: "7:00 PM",
-    location: "Rowlett, TX",
-    price: "FREE",
-    description: "Pilates in the Park with a local vendor market afterward. Attendees will also have a chance to win one of three free classes.",
-    type: "pilates",
-    link: "https://www.pulsepilatesbayside.com/offerings/sunset-on-the-mat-free?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUcHJpwZG9mAmZkaWQWUOwzBn2H2drkM-jrDY5ENi3wjMA732V4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp1iafOlVbTQ_ntPvLCqEhCiZG8MZo3OerBVVxZ-FumpiLd9nHC0uMdJT-S9c_aem_3cylLmw9XfV_Z-deEAiCpQ"
-  },
-  {
-    date: "SAT, SEP 26",
-    title: "She Walks",
-    category: "WALK",
-    time: "10:00 AM",
-    location: "Katy Trail",
-    price: "FREE",
-    description: "A morning walk with the girls on the Katy Trail.",
-    type: "run",
-    link: "https://posh.vip/e/she-walks-a-morning-with-the-girls-on-katy-trail-?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUcHYlwZG9mAmZkaWQWUOxS8vDdNo5S3g4Y935Td95mxKZxFWV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp0B5pJhXy9sL1huMzYToO3TNe2PB_Z8o0qKNfyfX2heBbny-X2itNB34fDic_aem_Cp1fPKrrz-6TTi6FJhVRW"
-  },
-  {
-    date: "SAT, SEP 26",
-    title: "Corporate Athletic HQ & Sweat440",
-    category: "FITNESS",
-    time: "10:45 AM CHECK-IN",
-    location: "DICK'S House of Sport, Dallas",
-    price: "FREE",
-    description: "Runner-focused workout led by SWEAT440 Prestonwood, with live DJ beats, recovery partners, wellness experiences, and an opportunity to connect with Dallas' running community.",
-    type: "sports",
-    link: "https://www.dickssportinggoods.com/s/scheduling/f/1985e203-a1ec-42c8-9f89-075c5b9643a6?s=1619&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUcIJBwZG9mAmZkaWQWUOzR_v85fuSA2r4dZPQYI7tWf5obmGV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp3ep0vNAuI_P5H1Sf393rH7ND0iCTJwuGbbrKgsx7OjsJWkopFGDp-MWT6DG_aem_EKUCJ_8T0-QRUZP1HR_1JA"
-  },
-  {
-    date: "SAT, SEP 26",
-    title: "Lupus Lone Star / Lupus Foundation of America",
-    category: "WALK",
-    time: "9:00 AM",
-    location: "Klyde Warren Park",
-    price: "SEE REGISTRATION OPTIONS",
-    description: "Walk to End Lupus. Choose an individual registration or form/join a team. Fundraise for lupus research, support, and education services while earning incentives along the way.",
-    type: "run",
-    link: "https://support.lupus.org/site/TR?fr_id=2280&pg=entry&_gl=1*eaazwo*_gcl_au*Mzg5NjQwMDQwLjE3ODk4NzM2OTI.*_ga*MTczNTQ5OTM2MC4xNzg5ODczNjky*_ga_YYDMSWHGD2*czE3ODk4NzM2OTIkbzEkZzEkdDE3ODk4NzQxNTYkajIxJGwwJGgw&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUcL0lwZG9mAmZkaWQWUOx3Af_zgVpb0lw0eZI8ir7tRpHrJWV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp9DmDdo4AyzwaRRbENiYw9s3taBIeC5A8VA1U7mX_OHevADRM9A9h5hHYlRt_aem_QWHV9kQbxu3CtuR4rUSp-g"
-  },
-  {
-    date: "SAT, SEP 26",
-    title: "Carries Pilates",
-    category: "PILATES",
-    time: "9:00 AM",
-    location: "Assembly Park, Plano",
-    price: "FREE",
-    description: "Rise & Shine Pilates on the Lawn with a live DJ, complimentary Force of Nature water, and an exclusive discount at on-site favorite Cliff Coffee.",
-    type: "pilates",
-    link: "https://www.eventbrite.com/e/rise-shine-pilates-on-the-lawn-tickets-1998254904210?aff=oddtdtcreator"
-  },
-  {
-    date: "SAT, SEP 26",
-    title: " Blank Haus x Soft Launch Pop-Up",
+    date: "SAT, OCT 3",
+    title: "Breathe & Brew: Dallas Edition",
     category: "WELLNESS",
-    time: "9:00–12:30 PM",
-    location: "650 Fort Worth Ave #135",
-    price: "$9 a cup",
-    description: "Wellness pop-up featuring low-calorie, high-protein soft serve. You do not have to take a class to attend.",
-    type: "sports",
-    link: "https://www.instagram.com/softlaunchicecream?stkn=MTcxeng2cXJtZ2NjYQ=="
+    time: "9:00 AM–12:00 PM",
+    location: "Reunion Tower, Dallas",
+    price: "$65",
+    description: "R&B yoga and Pilates with a live DJ, mimosas, and access to the GeO-Deck.",
+    type: "yoga",
+    link: "https://sweatpals.com/event/breathe-brew-dallas-edition?utm_source=user_share_fe07ef23-1310-4245-82df-c5d1687e5fe9&utm_medium=shared_link&utm_campaign=event_share&utm_content=link_in_bio&fbclid=PAdGRleAUlSL5leHRuA2FlbQIxMQBwZG9mAmZkaWQWUPP2ywHoRudYgCG5vYE5DVGHXBofPnNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABpzEZ3msNoanIQbfQOXg5QETbFwB2NMI4oUljDg5A5l22NgkuIbprKKLGjkv-_aem_V3jbmsKza2a9hvpYmZeP1Q"
   },
   {
-    date: "SAT, SEP 26",
-    title: "O2 Pilates x The Adolphus",
+    date: "SAT, OCT 3",
+    title: "Core in Chrome",
     category: "PILATES",
-    time: "8:30 AM",
-    location: "The Adolphus, Dallas",
-    price: "$52",
-    description: "Poolside Pilates featuring a 45-minute mat Pilates class, all-day pool access, one mimosa or zero-proof Ritual Cocktail, and valet parking.",
+    time: "10:00 AM",
+    location: "Dallas, TX",
+    price: "$27.50",
+    description: "Mat Pilates led by [solidcore], followed by a live DJ, coffee and matcha from Local Jonny's Coffee, plus recovery and wellness vendors.",
     type: "pilates",
-    link: "https://www.adolphus.com/event/poolside-pilates-with-o2"
+    link: "https://sweatpals.com/event/core-in-chrome?utm_source=user_share_866eef36-0060-415a-896d-912133e39308&utm_medium=shared_link&utm_campaign=event_share&utm_content=link_in_bio&fbclid=PAdGRleAUlZ-5leHRuA2FlbQExAHBkb2YCZmRpZBZQ80n04rDWBXgXEOU4d-0V5uGvkmnPc3J0YwZhcHBfaWQPMTI0MDI0NTc0Mjg3NDE0AAGnqjFvN-pNI2Bnhhrvd2AyCWUs-nIb7non5lsxjjHH8qV8tWPJrZT36fEIOt0_aem_lL1pwnhSOoEp65FmUgiUZw"
+  },
+  {
+    date: "SAT, OCT 3",
+    title: "Trap Pilates",
+    category: "PILATES",
+    time: "8:00 PM",
+    location: "Alpha Midway Dance Studio",
+    price: "$24",
+    description: "Trap music, low lights, and club energy. Mat is included.",
+    type: "pilates",
+    link: "https://resonancepilates.com/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUmNY5leHRuA2FlbQIxMQBwZG9mAmZkaWQWUPOFKQQ7fn9mcs-Sy2SFtgv6F21wGHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp1yCylc4FqGzAsPwY_YcgIRdL0rfJmS37YtC1cZ1tMpGJsozZkpR7viU_zrb_aem_7SXtKDHWUyP_4GLF3N1fCw"
+  },
+  {
+    date: "SAT, OCT 3",
+    title: "Vuori x Corporate Athletes",
+    category: "FITNESS",
+    time: "8:00 AM",
+    location: "NorthPark Lawn",
+    price: "FREE",
+    description: "A 45-minute full-body burn led by Khadijah Taylor, plus exclusive shopping at Vuori with 20% off your purchase.",
+    type: "fitness",
+    link: "https://www.eventbrite.com/e/private-shop-vuori-northpark-x-corporate-athletes-tickets-2001066652224?aff=oddtdtcreator&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUmNpZleHRuA2FlbQIxMQBwZG9mAmZkaWQWUPMxeHKckJzhOPCF1t6WJA4kN3t_GXNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp3Go4fw5vj-4A-QAX5U-FAgArvNo32_WvXqj4XjpateSkZzunIRaN3zeIXZQ_aem_ohvk6_ckR0GyI9MOBKYR2w"
+  },
+  {
+    date: "SAT, OCT 3",
+    title: "Sunrise Walk",
+    category: "WELLNESS",
+    time: "10:00 AM",
+    location: "Dallas, TX",
+    price: "FREE",
+    description: "Coffee, prayer, and a reflective walk with Flourish Affairs.",
+    type: "run",
+    link: "https://www.eventbrite.com/e/sunrise-walk-tickets-2000484904200?aff=oddtdtcreator&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUmQMxleHRuA2FlbQIxMQBwZG9mAmZkaWQWUPOmuUjPQP30kuGqUc9cZG-zxzkC4HNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp5cvXeiB9m-bxFUf3imilyPGNKVZdcmJkGU0D43Df1ivFt1ZCYsLg4G7gmow_aem_CAWfeny23QwjvReWxy8PEQ&keep_tld=true"
   },
 
   /* SUNDAY */
   {
-    date: "SUN, SEP 27",
-    title: "Dallas All Girls Tennis x Pax & Beneficia",
-    category: "SPORTS",
-    time: "9:30 AM",
-    location: "The Courts at Cypress Waters",
-    price: "$30",
-    description: "Pax & Play featuring tennis lessons and open play. Ticket includes three live electrolyte drink flavors.",
-    type: "sports",
-    link: "https://posh.vip/e/crafts-on-the-court-?u=elliebrock35&_t=mu1snn4j&os=ios&src=event_page&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUcHpJwZG9mAmZkaWQWUOw_d_TVvN7pTaxMslya-rZPrpwwRmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp0yP1QG2g_8d1sZW-pJnEjDD_N6KS-j5J8ho-Z-bMyKQWtQ6UAG0PKb_EpvX_aem_GxJVmiLlV-ai-uicJsnbvg"
+    date: "SUN, OCT 4",
+    title: "Sip & Sculpt",
+    category: "FITNESS",
+    time: "10:00 AM–1:00 PM",
+    location: "Ohm Fitness",
+    price: "$35",
+    description: "EMS workout, red light therapy, sauna, and drinks.",
+    type: "fitness",
+    link: "https://partiful.com/e/edv7HCOzSVt2Ebas4ikc?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUlRvlleHRuA2FlbQIxMQBwZG9mAmZkaWQWUPMwNYOBCBccLMuztL1qwBJ7u8lYaHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp69K_HeS_FrneCGmpRlDvJM2vZ1Ha1jxYLvGxM8Xpb9vRq3xGeiaMkRWfgzk_aem_qA9kNKtcE3qcce6fA2YWuw"
   },
   {
-    date: "SUN, SEP 27",
-    title: "DTR Run Club",
-    category: "RUN",
-    time: "8:30 AM",
-    location: "Irving, TX",
+    date: "SUN, OCT 4",
+    title: "BFit Cardio Dance",
+    category: "FITNESS",
+    time: "6:00 PM",
+    location: "Legacy Hall",
     price: "FREE",
-    description: "A 3-mile loop around Lake Carolyn with community, vendors, a DJ, giveaways, and coffee from Pax and Beneficia.",
-    type: "run",
-    link: "https://www.eventbrite.com/e/saturday-run-club-tickets-2000661098201?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUcH_pwZG9mAmZkaWQWUOzsbghiD_jpIdLdBgW_3cNtQEAEBmV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp75yN9cwnID9O9MwXKDPhVtcZFxjd4Zc3OoJffsw-lNZQRHpJ66oELRjAsef_aem_n4FyGGHpan67eeVzUlVqcA"
+    description: "A high-energy cardio dance workout with Brandon Biscoe.",
+    type: "fitness",
+    link: "https://www.eventbrite.ca/e/dance-cardio-with-brandon-biscoe-tickets-2000015264495?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=wsa&aff=ebdsshwebmobile&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUmNypleHRuA2FlbQIxMQBwZG9mAmZkaWQWUPORm9G4oN7LCr9eyk4g_0f4PQwnm3NydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp5xdyyS_q-maBpLvZYp0V6feOVhK10bZkmnBcvUx0A-xt7aAe1TofFE4bPJr_aem_QiZ9fx7FRbFhpyB3w4aheQ"
   },
   {
-    date: "SUN, SEP 27",
-    title: "Bodied by LA & Honey Scented Co",
-    category: "PILATES",
-    time: "10:00 AM",
-    location: "Dallas, TX",
-    price: "$85",
-    description: "Sculpt & Scent starts with a 50-minute full-body sculpt class, followed by a custom scented sugar scrub. Enjoy gift bags, local vendors, and a matcha bar. Option to participate in sculpt only.",
-    type: "pilates",
-    link: "https://www.bodiedbyla.com/hourglassflowsculpt"
-  },
-  {
-    date: "SUN, SEP 27",
-    title: "Shine Hot Pilates & Jungles Studio",
-    category: "PILATES",
-    time: "GROUP A 10:00 AM / GROUP B 11:30 AM",
-    location: "Leela's Uptown, Dallas",
-    price: "$42.24",
-    description: "Pilates on the lawn and Leela's brunch, with IV and permanent jewelry vendors. Brunch is included.",
-    type: "pilates",
-    link: "https://www.eventbrite.com/e/pilates-brunch-at-leelas-in-uptown-dallas-tickets-2001576001702?aff=ebdsoporgprofile&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUcNMxwZG9mAmZkaWQWUOyppUpPSx2-X5pEpQYvHwSeti73sWV4dG4DYWVtAjExAHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp4PXMjZuDPLbcJ7qpij3ZPGGJHqYSDjeRrt3B4T5l_WbSmM6vidyHG5m2LtR_aem_iHC9XfTYAxgAfpdHnhMcpg"
-  },
-  {
-    date: "SUN, SEP 27",
-    title: "In Life Wellness Richardson",
-    category: "PILATES",
-    time: "10:00 AM",
-    location: "Richardson, TX",
-    price: "SEE EVENT DETAILS",
-    description: "Outdoor Pilates morning on the grass.",
-    type: "pilates",
-    link: "https://www.instagram.com/inlifewellness_richardson?stkn=MWJ6MTNoOXoyYml0NQ=="
-  },
-  {
-    date: "SUN, SEP 27",
-    title: "Green Light Social Dallas",
+    date: "SUN, OCT 4",
+    title: "Community Care Sound Bath: The Anniversary Wellness Experience",
     category: "WELLNESS",
-    time: "12:00 PM",
-    location: "Dallas, TX",
-    price: "WORKOUT FREE",
-    description: "Abs & Ass + Burn & Brunch featuring a high-energy workout, cold plunge, brunch and drink specials, music, and local vendors.",
-    type: "hiit",
-    link: "https://www.instagram.com/theheartandsoulmarket?stkn=MXB1bGJ1ZzN2NjEwdg=="
+    time: "2:00 PM",
+    location: "The Greenhouse Lounge",
+    price: "DONATION-BASED • $15 MINIMUM",
+    description: "Anniversary sound bath wellness experience with vendors including waist beads, vitamin D shots, and flash tattoos.",
+    type: "yoga",
+    link: "https://www.eventbrite.com/e/community-care-sound-bath-the-anniversary-wellness-experience-tickets-2001151167010?sg=4f32abeae90ea5ef66f25b03912cc1f8d3304d60959f6a9a0a21d755235d1e3219d563b37f6c391cbe9bf00ca223921e5fbc4096a40ff95e2469554b040797370496d7e274307c5b814a123489&aff=ebdsshios&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAUmPNpleHRuA2FlbQIxMQBwZG9mAmZkaWQWUPPCNx6bPS66U744eWh8wRSPWjJUcnNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp3jkPwo7T9ZoX71jUzIiMJOzJUVzTiOdq6KUHP5_K9Yq5n0q-w0-bXCeYKOJ_aem_VDj1qQXzHdcAUOl2dwuEHg"
   }
 ];
 
@@ -296,7 +208,7 @@ function renderEvents(filter = "all") {
 
   if (filter === "run") {
     filteredEvents = events.filter(event =>
-      event.category === "RUN"
+      event.category === "RUN" || event.category === "WALK"
     );
   }
 
@@ -334,9 +246,13 @@ function renderEvents(filter = "all") {
 
         <p class="event-description">${event.description}</p>
 
-        <a class="event-link" href="${event.link}" target="_blank" rel="noopener noreferrer">
-          VIEW DETAILS &nbsp; →
-        </a>
+        ${
+          event.link
+            ? `<a class="event-link" href="${event.link}" target="_blank" rel="noopener noreferrer">
+                 VIEW DETAILS &nbsp; →
+               </a>`
+            : ""
+        }
       </div>
     </article>
   `).join("");
