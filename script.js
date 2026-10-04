@@ -1,4 +1,3 @@
-```javascript
 const events = [
   /* MONDAY */
   {
@@ -171,139 +170,198 @@ const events = [
 
 
 /* ---------------------------------
-   WAIT FOR PAGE TO LOAD
+   PAGE ELEMENTS
 --------------------------------- */
 
-document.addEventListener("DOMContentLoaded", () => {
-
-  const eventGrid = document.getElementById("event-grid");
-  const menuToggle = document.querySelector(".menu-toggle");
-  const mainNav = document.querySelector(".main-nav");
+const eventGrid = document.getElementById("event-grid");
+const menuToggle = document.querySelector(".menu-toggle");
+const mainNav = document.querySelector(".main-nav");
 
 
-  /* ---------------------------------
-     RENDER EVENTS
-  --------------------------------- */
+/* ---------------------------------
+   RENDER EVENTS
+--------------------------------- */
 
-  function renderEvents(filter = "all") {
+function renderEvents(filter = "all") {
 
-    if (!eventGrid) {
-      console.error(
-        'Event grid not found. Make sure your HTML has id="event-grid".'
-      );
-      return;
-    }
-
-    let filteredEvents = events;
-
-    if (filter === "fitness") {
-      filteredEvents = events.filter(event =>
-        event.category === "FITNESS"
-      );
-    }
-
-    if (filter === "wellness") {
-      filteredEvents = events.filter(event =>
-        event.category === "WELLNESS" ||
-        event.category === "YOGA"
-      );
-    }
-
-    if (filter === "pilates") {
-      filteredEvents = events.filter(event =>
-        event.category === "PILATES"
-      );
-    }
-
-    if (filter === "run") {
-      filteredEvents = events.filter(event =>
-        event.category === "RUN" ||
-        event.category === "WALK"
-      );
-    }
-
-    if (filter === "free") {
-      filteredEvents = events.filter(event =>
-        event.price.trim().toUpperCase() === "FREE"
-      );
-    }
-
-    if (filteredEvents.length === 0) {
-      eventGrid.innerHTML = `
-        <div class="no-events">
-          <p>No events found in this category this week.</p>
-        </div>
-      `;
-      return;
-    }
-
-    eventGrid.innerHTML = filteredEvents.map(event => `
-      <article class="event-card">
-
-        <div class="event-image ${event.type}">
-          <span class="event-date">${event.date}</span>
-        </div>
-
-        <div class="event-body">
-
-          <span class="event-category">
-            ${event.category}
-          </span>
-
-          <h3>${event.title}</h3>
-
-          <div class="event-meta">
-            <span>🕐 &nbsp; ${event.time}</span>
-            <span>⌖ &nbsp; ${event.location}</span>
-            <span>♥ &nbsp; ${event.price}</span>
-          </div>
-
-          <p class="event-description">
-            ${event.description}
-          </p>
-
-          ${
-            event.link
-              ? `
-                <a
-                  class="event-link"
-                  href="${event.link}"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  VIEW DETAILS &nbsp; →
-                </a>
-              `
-              : ""
-          }
-
-        </div>
-
-      </article>
-    `).join("");
+  if (!eventGrid) {
+    console.error(
+      'Event grid not found. Make sure your HTML has id="event-grid".'
+    );
+    return;
   }
 
+  let filteredEvents = events;
 
-  /* ---------------------------------
-     SHOW ALL EVENTS ON PAGE LOAD
-  --------------------------------- */
+  /* FITNESS */
+  if (filter === "fitness") {
+    filteredEvents = events.filter(event =>
+      event.category === "FITNESS"
+    );
+  }
 
-  renderEvents();
+  /* WELLNESS */
+  if (filter === "wellness") {
+    filteredEvents = events.filter(event =>
+      event.category === "WELLNESS" ||
+      event.category === "YOGA"
+    );
+  }
+
+  /* PILATES */
+  if (filter === "pilates") {
+    filteredEvents = events.filter(event =>
+      event.category === "PILATES"
+    );
+  }
+
+  /* RUN */
+  if (filter === "run") {
+    filteredEvents = events.filter(event =>
+      event.category === "RUN" ||
+      event.category === "WALK"
+    );
+  }
+
+  /* FREE */
+  if (filter === "free") {
+    filteredEvents = events.filter(event =>
+      event.price.trim().toUpperCase() === "FREE"
+    );
+  }
+
+  /* NO EVENTS */
+  if (filteredEvents.length === 0) {
+    eventGrid.innerHTML = `
+      <div class="no-events">
+        <p>No events found in this category this week.</p>
+      </div>
+    `;
+    return;
+  }
+
+  /* EVENT CARDS */
+
+  eventGrid.innerHTML = filteredEvents.map(event => `
+    <article class="event-card">
+
+      <div class="event-image ${event.type}">
+        <span class="event-date">${event.date}</span>
+      </div>
+
+      <div class="event-body">
+
+        <span class="event-category">
+          ${event.category}
+        </span>
+
+        <h3>${event.title}</h3>
+
+        <div class="event-meta">
+          <span>🕐 &nbsp; ${event.time}</span>
+          <span>⌖ &nbsp; ${event.location}</span>
+          <span>♥ &nbsp; ${event.price}</span>
+        </div>
+
+        <p class="event-description">
+          ${event.description}
+        </p>
+
+        ${
+          event.link
+            ? `
+              <a
+                class="event-link"
+                href="${event.link}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                VIEW DETAILS &nbsp; →
+              </a>
+            `
+            : ""
+        }
+
+      </div>
+
+    </article>
+  `).join("");
+}
 
 
-  /* ---------------------------------
-     FILTER LINKS
-  --------------------------------- */
+/* ---------------------------------
+   SHOW ALL EVENTS ON PAGE LOAD
+--------------------------------- */
 
-  document.querySelectorAll("[data-filter]").forEach(link => {
+renderEvents();
+
+
+/* ---------------------------------
+   FILTER LINKS
+--------------------------------- */
+
+document.querySelectorAll("[data-filter]").forEach(link => {
+
+  link.addEventListener("click", event => {
+
+    event.preventDefault();
+
+    const filter = link.dataset.filter;
+
+    renderEvents(filter);
+
+    const eventsSection = document.getElementById("events");
+
+    if (eventsSection) {
+      eventsSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+
+    /* Update active navigation */
+
+    document.querySelectorAll(".main-nav a").forEach(navLink => {
+      navLink.classList.remove("active");
+    });
+
+    const matchingNav = document.querySelector(
+      `.main-nav a[data-filter="${filter}"]`
+    );
+
+    if (matchingNav) {
+      matchingNav.classList.add("active");
+    }
+
+    /* Close mobile menu */
+
+    if (mainNav && menuToggle) {
+      mainNav.classList.remove("open");
+
+      menuToggle.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+    }
+
+  });
+
+});
+
+
+/* ---------------------------------
+   VIEW ALL EVENTS
+--------------------------------- */
+
+document
+  .querySelectorAll('a[href="#events"]:not([data-filter])')
+  .forEach(link => {
 
     link.addEventListener("click", event => {
 
       event.preventDefault();
 
-      const filter = link.dataset.filter;
-
-      renderEvents(filter);
+      renderEvents("all");
 
       const eventsSection = document.getElementById("events");
 
@@ -318,17 +376,12 @@ document.addEventListener("DOMContentLoaded", () => {
         navLink.classList.remove("active");
       });
 
-      const matchingNav = document.querySelector(
-        `.main-nav a[data-filter="${filter}"]`
+      const thisWeek = document.querySelector(
+        '.main-nav a[data-filter="all"]'
       );
 
-      if (matchingNav) {
-        matchingNav.classList.add("active");
-      }
-
-      if (mainNav && menuToggle) {
-        mainNav.classList.remove("open");
-        menuToggle.setAttribute("aria-expanded", "false");
+      if (thisWeek) {
+        thisWeek.classList.add("active");
       }
 
     });
@@ -336,130 +389,88 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-  /* ---------------------------------
-     VIEW ALL EVENTS
-  --------------------------------- */
+/* ---------------------------------
+   YEAR
+--------------------------------- */
 
-  document
-    .querySelectorAll('a[href="#events"]:not([data-filter])')
-    .forEach(link => {
+const yearElement = document.getElementById("year");
 
-      link.addEventListener("click", event => {
-
-        event.preventDefault();
-
-        renderEvents("all");
-
-        const eventsSection = document.getElementById("events");
-
-        if (eventsSection) {
-          eventsSection.scrollIntoView({
-            behavior: "smooth",
-            block: "start"
-          });
-        }
-
-        document.querySelectorAll(".main-nav a").forEach(navLink => {
-          navLink.classList.remove("active");
-        });
-
-        const thisWeek = document.querySelector(
-          '.main-nav a[data-filter="all"]'
-        );
-
-        if (thisWeek) {
-          thisWeek.classList.add("active");
-        }
-
-      });
-
-    });
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear();
+}
 
 
-  /* ---------------------------------
-     YEAR
-  --------------------------------- */
+/* ---------------------------------
+   MOBILE MENU
+--------------------------------- */
 
-  const yearElement = document.getElementById("year");
+if (menuToggle && mainNav) {
 
-  if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
-  }
+  menuToggle.addEventListener("click", () => {
+
+    const isOpen = mainNav.classList.toggle("open");
+
+    menuToggle.setAttribute(
+      "aria-expanded",
+      String(isOpen)
+    );
+
+  });
+
+}
 
 
-  /* ---------------------------------
-     MOBILE MENU
-  --------------------------------- */
+document.querySelectorAll(".main-nav a").forEach(link => {
 
-  if (menuToggle && mainNav) {
+  link.addEventListener("click", () => {
 
-    menuToggle.addEventListener("click", () => {
+    if (mainNav && menuToggle) {
 
-      const isOpen = mainNav.classList.toggle("open");
+      mainNav.classList.remove("open");
 
       menuToggle.setAttribute(
         "aria-expanded",
-        String(isOpen)
+        "false"
       );
 
-    });
-
-  }
-
-  document.querySelectorAll(".main-nav a").forEach(link => {
-
-    link.addEventListener("click", () => {
-
-      if (mainNav && menuToggle) {
-
-        mainNav.classList.remove("open");
-
-        menuToggle.setAttribute(
-          "aria-expanded",
-          "false"
-        );
-
-      }
-
-    });
+    }
 
   });
 
-
-  /* ---------------------------------
-     NEWSLETTER
-  --------------------------------- */
-
-  const signupForm = document.getElementById("signup-form");
-
-  if (signupForm) {
-
-    signupForm.addEventListener("submit", event => {
-
-      event.preventDefault();
-
-      alert(
-        "Thanks for joining the weekly finds! Newsletter signup is coming soon."
-      );
-
-    });
-
-  }
+});
 
 
-  /* ---------------------------------
-     CLEAN INTERNAL URLS
-  --------------------------------- */
+/* ---------------------------------
+   NEWSLETTER
+--------------------------------- */
 
-  if (window.location.search) {
+const signupForm = document.getElementById("signup-form");
 
-    window.history.replaceState(
-      {},
-      document.title,
-      window.location.pathname + window.location.hash
+if (signupForm) {
+
+  signupForm.addEventListener("submit", event => {
+
+    event.preventDefault();
+
+    alert(
+      "Thanks for joining the weekly finds! Newsletter signup is coming soon."
     );
 
-  }
+  });
 
-});
-```
+}
+
+
+/* ---------------------------------
+   CLEAN INTERNAL URLS
+--------------------------------- */
+
+if (window.location.search) {
+
+  window.history.replaceState(
+    {},
+    document.title,
+    window.location.pathname + window.location.hash
+  );
+
+}
