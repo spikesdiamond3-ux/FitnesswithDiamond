@@ -167,7 +167,6 @@ const events = [
     link: "https://www.eventbrite.com/e/the-kick-off-a-runwalk-experience-dallas-tx-tickets-2000053794740?aff=oddtdtcreator"
   }
 ];
-
 const eventGrid = document.getElementById("event-grid");
 
 /* ---------------------------------
@@ -175,35 +174,42 @@ const eventGrid = document.getElementById("event-grid");
 --------------------------------- */
 
 function renderEvents(filter = "all") {
-  if (!eventGrid) return;
+  if (!eventGrid) {
+    console.error("Event grid not found. Make sure your HTML has id=\"event-grid\".");
+    return;
+  }
 
   let filteredEvents = events;
 
   if (filter === "fitness") {
-    filteredEvents = events.filter(event => event.category === "FITNESS");
+    filteredEvents = events.filter(event =>
+      event.category === "FITNESS"
+    );
   }
 
   if (filter === "wellness") {
     filteredEvents = events.filter(event =>
-      event.category === "WELLNESS"
+      event.category === "WELLNESS" ||
+      event.category === "YOGA"
     );
   }
 
   if (filter === "pilates") {
     filteredEvents = events.filter(event =>
-      event.category === "PILATES" || event.type === "yoga"
+      event.category === "PILATES"
     );
   }
 
   if (filter === "run") {
     filteredEvents = events.filter(event =>
-      event.category === "RUN" || event.category === "WALK"
+      event.category === "RUN" ||
+      event.category === "WALK"
     );
   }
 
   if (filter === "free") {
     filteredEvents = events.filter(event =>
-      event.price.toUpperCase() === "FREE"
+      event.price.trim().toUpperCase() === "FREE"
     );
   }
 
@@ -218,12 +224,16 @@ function renderEvents(filter = "all") {
 
   eventGrid.innerHTML = filteredEvents.map(event => `
     <article class="event-card">
+
       <div class="event-image ${event.type}">
         <span class="event-date">${event.date}</span>
       </div>
 
       <div class="event-body">
-        <span class="event-category">${event.category}</span>
+
+        <span class="event-category">
+          ${event.category}
+        </span>
 
         <h3>${event.title}</h3>
 
@@ -233,29 +243,47 @@ function renderEvents(filter = "all") {
           <span>♥ &nbsp; ${event.price}</span>
         </div>
 
-        <p class="event-description">${event.description}</p>
+        <p class="event-description">
+          ${event.description}
+        </p>
 
         ${
           event.link
-            ? `<a class="event-link" href="${event.link}" target="_blank" rel="noopener noreferrer">
-                 VIEW DETAILS &nbsp; →
-               </a>`
+            ? `
+              <a
+                class="event-link"
+                href="${event.link}"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                VIEW DETAILS &nbsp; →
+              </a>
+            `
             : ""
         }
+
       </div>
+
     </article>
   `).join("");
 }
 
-/* Show all events when page loads */
+
+/* ---------------------------------
+   SHOW ALL EVENTS ON PAGE LOAD
+--------------------------------- */
+
 renderEvents();
+
 
 /* ---------------------------------
    FILTER LINKS
 --------------------------------- */
 
 document.querySelectorAll("[data-filter]").forEach(link => {
+
   link.addEventListener("click", event => {
+
     event.preventDefault();
 
     const filter = link.dataset.filter;
@@ -272,6 +300,7 @@ document.querySelectorAll("[data-filter]").forEach(link => {
     }
 
     /* Update active navigation state */
+
     document.querySelectorAll(".main-nav a").forEach(navLink => {
       navLink.classList.remove("active");
     });
@@ -285,45 +314,56 @@ document.querySelectorAll("[data-filter]").forEach(link => {
     }
 
     /* Close mobile menu */
+
     if (mainNav && menuToggle) {
       mainNav.classList.remove("open");
       menuToggle.setAttribute("aria-expanded", "false");
     }
+
   });
+
 });
+
 
 /* ---------------------------------
    VIEW ALL EVENTS
 --------------------------------- */
 
-document.querySelectorAll('a[href="#events"]:not([data-filter])').forEach(link => {
-  link.addEventListener("click", event => {
-    event.preventDefault();
+document
+  .querySelectorAll('a[href="#events"]:not([data-filter])')
+  .forEach(link => {
 
-    renderEvents("all");
+    link.addEventListener("click", event => {
 
-    const eventsSection = document.getElementById("events");
+      event.preventDefault();
 
-    if (eventsSection) {
-      eventsSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
+      renderEvents("all");
+
+      const eventsSection = document.getElementById("events");
+
+      if (eventsSection) {
+        eventsSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+
+      document.querySelectorAll(".main-nav a").forEach(navLink => {
+        navLink.classList.remove("active");
       });
-    }
 
-    document.querySelectorAll(".main-nav a").forEach(navLink => {
-      navLink.classList.remove("active");
+      const thisWeek = document.querySelector(
+        '.main-nav a[data-filter="all"]'
+      );
+
+      if (thisWeek) {
+        thisWeek.classList.add("active");
+      }
+
     });
 
-    const thisWeek = document.querySelector(
-      '.main-nav a[data-filter="all"]'
-    );
-
-    if (thisWeek) {
-      thisWeek.classList.add("active");
-    }
   });
-});
+
 
 /* ---------------------------------
    YEAR
@@ -335,6 +375,7 @@ if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
 }
 
+
 /* ---------------------------------
    MOBILE MENU
 --------------------------------- */
@@ -343,20 +384,39 @@ const menuToggle = document.querySelector(".menu-toggle");
 const mainNav = document.querySelector(".main-nav");
 
 if (menuToggle && mainNav) {
+
   menuToggle.addEventListener("click", () => {
+
     const isOpen = mainNav.classList.toggle("open");
-    menuToggle.setAttribute("aria-expanded", String(isOpen));
+
+    menuToggle.setAttribute(
+      "aria-expanded",
+      String(isOpen)
+    );
+
   });
+
 }
 
 document.querySelectorAll(".main-nav a").forEach(link => {
+
   link.addEventListener("click", () => {
+
     if (mainNav && menuToggle) {
+
       mainNav.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
+
+      menuToggle.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
     }
+
   });
+
 });
+
 
 /* ---------------------------------
    NEWSLETTER
@@ -365,26 +425,31 @@ document.querySelectorAll(".main-nav a").forEach(link => {
 const signupForm = document.getElementById("signup-form");
 
 if (signupForm) {
+
   signupForm.addEventListener("submit", event => {
+
     event.preventDefault();
 
     alert(
       "Thanks for joining the weekly finds! Newsletter signup is coming soon."
     );
+
   });
-});
+
+}
+
 
 /* ---------------------------------
    CLEAN INTERNAL URLS
-   Removes unwanted query strings
 --------------------------------- */
 
 if (window.location.search) {
+
   window.history.replaceState(
     {},
     document.title,
     window.location.pathname + window.location.hash
   );
+
 }
-```
 
