@@ -26,7 +26,7 @@ const events = [
   /* TUESDAY */
   {
     date: "TUE, OCT 6",
-    title: "Femme Foward Volleyball Social",
+    title: "Femme Forward Volleyball Social",
     category: "SPORTS",
     time: "SEE EVENT DETAILS",
     location: "Lake Highlands North Aquatic Center",
