@@ -214,7 +214,7 @@ const events = [
     category: "WELLNESS",
     time: "9:30 AM",
     location: "Cafe Olivia, Addison, TX",
-    price: "DONATION-BASED",
+    price: "$10 - DONATION-BASED",
     description: "A flow session hosted by She Well Co. and Faithful Giving Project. Proceeds support the Thanksgiving Donation Drive.",
     type: "yoga",
     link: "https://www.faithfulgivingproject.com/event-details/fall-into-flow"
@@ -313,7 +313,7 @@ const events = [
     date: "SUN, OCT 25",
     title: "Sweat & Social: HYROX Intro",
     category: "FITNESS",
-    time: "SEE EVENT DETAILS",
+    time: "10:00 am",
     location: "Hunger In The Wild Gym",
     price: "FREE",
     description: "A 45-minute workout, Changing Chaos pop-up, free giveaways, and an introduction to HIIT and HYROX.",
