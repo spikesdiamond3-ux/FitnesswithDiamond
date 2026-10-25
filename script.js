@@ -1,549 +1,597 @@
 const events = [
-  // MONDAY, OCTOBER 19
+  // MONDAY, OCTOBER 26
   {
-    date: "MON, OCT 19",
-    title: "Run It Up Dallas: Fight Promo Run",
-    category: "RUN",
+    title: "Full Moon Swim",
+    organizer: "W Dallas × Luna Meta Physical",
+    date: "2026-10-26",
+    day: "MON",
     time: "7:00 PM",
-    location: "Trinity Groves Bridge, Dallas, TX",
-    price: "FREE",
-    description: "Join Alycia Baumgardner for a Fight Promo Run.",
-    type: "run",
-    link: "https://www.instagram.com/runitup_dallas?dlrf=MWJ2dnNreHZzZ3c1Mg=="
-  },
-  {
-    date: "MON, OCT 19",
-    title: "Hot Girl Strides: Purple & Powerful",
-    category: "WALK",
-    time: "6:45 PM",
-    location: "Epic Central, Grand Prairie, TX",
-    price: "FREE",
-    description: "A community stride raising awareness for Domestic Violence Awareness Month and celebrating Body Appreciation Day.",
-    type: "run",
-    link: "https://linktr.ee/HotGirlStridee"
-  },
-
-  // TUESDAY, OCTOBER 20
-  {
-    date: "TUE, OCT 20",
-    title: "Pilates with WRKIT with DB",
-    category: "PILATES",
-    time: "5:30 PM",
-    location: "Burnett Park, Downtown Fort Worth, TX",
-    price: "FREE",
-    description: "Enjoy a free community Pilates session in Burnett Park.",
-    type: "pilates",
-    link: "https://www.instagram.com/burnettparkfw?xtok=bW9oZDdvODZucTln"
-  },
-  {
-    date: "TUE, OCT 20",
-    title: "Femme Forward: Volleyball Social",
-    category: "FITNESS",
-    time: "7:00 PM",
-    location: "Dallas, TX",
-    price: "FREE",
-    description: "Casual and competitive co-ed games that are beginner-friendly, with music, good vibes, and refreshments.",
-    type: "fitness",
-    link: "https://partiful.com/e/3daM9Hc3Dwh81LdBmUcQ"
-  },
-  {
-    date: "TUE, OCT 20",
-    title: "Cedar Hill Volleyball Open Play",
-    category: "FITNESS",
-    time: "6:00 PM",
-    location: "Alan E. Sims Recreation Center, Cedar Hill, TX",
-    price: "FREE",
-    description: "Community volleyball open play. Also offered Saturdays at 3:00 PM.",
-    type: "fitness",
-    link: "https://cedarhilltx.com/222/Parks-Recreation"
-  },
-  {
-    date: "TUE, OCT 20",
-    title: "Xtreme Soul Line Dancing",
-    category: "FITNESS",
-    time: "6:30 PM",
-    location: "Signature Park, Cedar Hill, TX",
-    price: "FREE",
-    description: "Move, groove, and enjoy a community soul line-dancing session.",
-    type: "fitness",
-    link: "https://cedarhilltx.com/222/Parks-Recreation"
-  },
-
-  // WEDNESDAY, OCTOBER 21
-  {
-    date: "WED, OCT 21",
-    title: "Breezy Movements: Yoga in the Park",
-    category: "YOGA",
-    time: "6:30 PM",
-    location: "Signature Park, Cedar Hill, TX",
-    price: "FREE",
-    description: "Free beginner-friendly outdoor yoga.",
-    type: "yoga",
-    link: "https://www.eventbrite.com/e/free-beginner-yoga-tickets-2003043635434"
-  },
-  {
-    date: "WED, OCT 21",
-    title: "Certified Pilates Girl: Hot Pilates",
-    category: "PILATES",
-    time: "7:30 PM",
-    location: "Bahari Studios",
-    price: "FIRST CLASS FREE / $30 DROP-IN",
-    description: "Instructor Rayana Kelsey leads Hot Pilates to a Certified Lover Boy playlist in honor of Drake's birthday. Another class is offered Friday at 11:00 AM.",
-    type: "pilates",
-    link: "https://www.baharistudio.com/schedule?_mt=%2Fschedule%2Fdaily%2F48541%3FactiveDate%3D2026-10-23%26locations%3D48717"
-  },
-  {
-    date: "WED, OCT 21",
-    title: "Beginners Yoga in the Park",
-    category: "YOGA",
-    time: "6:30 PM",
-    location: "Signature Park, Cedar Hill, TX",
-    price: "FREE",
-    description: "Bring a yoga mat and water for this beginner-friendly outdoor class.",
-    type: "yoga",
-    link: "https://cedarhilltx.com/222/Parks-Recreation"
-  },
-
-  // THURSDAY, OCTOBER 22
-  {
-    date: "THU, OCT 22",
-    title: "Resilience Project: Final Commit to the Hit",
-    category: "FITNESS",
-    time: "6:30 PM",
-    location: "Toyota Music Factory, Irving, TX",
-    price: "FREE",
-    description: "The final Commit2HIIT of the season. Let's make it glow!",
-    type: "fitness",
-    link: "https://www.eventbrite.com/e/commit2hiit-last-one-of-the-season-lets-make-it-glow-102226-tickets-2002463154199"
-  },
-  {
-    date: "THU, OCT 22",
-    title: "Tai Chi & Qigong in the Park",
+    price: "$77.08",
+    location: "W Dallas — Wet Deck",
     category: "WELLNESS",
-    time: "6:00 PM",
-    location: "Signature Park, Cedar Hill, TX",
-    price: "FREE",
-    description: "An outdoor session focused on balance, flexibility, and relaxation.",
-    type: "yoga",
-    link: "https://cedarhilltx.com/222/Parks-Recreation"
-  },
-
-  // FRIDAY, OCTOBER 23
-  {
-    date: "FRI, OCT 23",
-    title: "The Pink Edit",
-    category: "WELLNESS",
-    time: "1:00 PM",
-    location: "Dallas, TX",
-    price: "$30",
-    description: "A women-only 50-minute heated yoga experience by Connect Studio and Duality Fit, kicking off For Her Weekend with wellness vendors.",
-    type: "yoga",
-    link: "https://posh.vip/e/the-pink-edit-duality-x-form"
-  },
-  {
-    date: "FRI, OCT 23",
-    title: "Trap Pilates After Dark",
-    category: "PILATES",
-    time: "8:00 PM",
-    location: "Dallas, TX",
-    price: "$26 • SOLD OUT / WAITLIST",
-    description: "An after-dark Pilates session. Join the waitlist for a spot.",
-    type: "pilates",
-    link: "https://momence.com/Resonance-pilates/Trap-Pilates-After-Dark/145255956?skipPreview=true"
-  },
-  {
-    date: "FRI, OCT 23",
-    title: "Pilates After Dark Costume Party",
-    category: "PILATES",
-    time: "6:00 PM",
-    location: "Zena Pilates, Plano, TX",
-    price: "$30",
-    description: "Enjoy antojitos, refreshments, photo moments, a best-costume award, and Trunk-or-Treat from 7:00–7:50 PM for ticket holders with kids.",
-    type: "pilates",
-    link: "https://sweatpals.com/class/loteria-planks"
-  },
-  {
-    date: "FRI, OCT 23",
-    title: "Madison Ace Sports: Girls Night Out",
-    category: "FITNESS",
-    time: "7:00 PM",
-    location: "DeSoto, TX",
-    price: "$20",
-    description: "Only Beginners & Vibes: R&B jams, learning, networking, and play.",
-    type: "fitness",
-    link: "https://www.madisonace.com/events-"
-  },
-
-  // SATURDAY, OCTOBER 24
-  {
-    date: "SAT, OCT 24",
-    title: "Pilates in the Sky",
-    category: "PILATES",
-    time: "9:30 AM",
-    location: "Reunion Tower, Dallas, TX",
-    price: "$30",
-    description: "An exclusive 50-minute mat Pilates class above the Dallas skyline, with brand partners, product sampling, giveaways, and take-home goodie bags.",
-    type: "pilates",
-    link: "https://app.arketa.co/thereformerroom/checkout/VYVdf6AWJUcSeOwn6LqA"
-  },
-  {
-    date: "SAT, OCT 24",
-    title: "Young Dolph Class: HIIT & Weights",
-    category: "FITNESS",
-    time: "8:00 AM",
-    location: "Pure Yoga Studio",
-    price: "$20 WITH CODE CALIENTE",
-    description: "Hot Yoga HIIT and weights with Carolina, set to a Young Dolph playlist.",
-    type: "fitness",
-    link: "https://www.pureyogatexas.com/events-catalog/10-24-26-hiit-weights-caro"
-  },
-  {
-    date: "SAT, OCT 24",
-    title: "Pretty Walks & Power Talks",
-    category: "WALK",
-    time: "10:00 AM",
-    location: "Rose Cafe",
-    price: "FREE",
-    description: "Pink-themed community walk supporting women impacted by breast cancer while celebrating strength, resilience, and community.",
-    type: "run",
-    link: "https://partiful.com/e/udrcpkuXfNyINt331fOH"
-  },
-  {
-    date: "SAT, OCT 24",
-    title: "Fall into Flow",
-    category: "WELLNESS",
-    time: "9:30 AM",
-    location: "Cafe Olivia, Addison, TX",
-    price: "$10 - DONATION-BASED",
-    description: "A flow session hosted by She Well Co. and Faithful Giving Project. Proceeds support the Thanksgiving Donation Drive.",
-    type: "yoga",
-    link: "https://www.faithfulgivingproject.com/event-details/fall-into-flow"
-  },
-  {
-    date: "SAT, OCT 24",
-    title: "Go Outside Girlies: Kickball Game",
-    category: "FITNESS",
-    time: "5:00 PM",
-    location: "Lake Cliff Park, Dallas, TX",
-    price: "RSVP BY DM",
-    description: "Join the kickball game and post-game cookout. RSVP by sending the organizers a DM.",
-    type: "fitness",
-    link: "https://www.instagram.com/gooutside_girlies?psln=YXRxdWpvZmw5M250"
-  },
-  {
-    date: "SAT, OCT 24",
-    title: "Southie Sculpt",
-    category: "FITNESS",
-    time: "12:30 PM",
-    location: "Bahari Studios",
-    price: "FREE FOR MEMBERS / $20 NON-MEMBERS",
-    description: "A sculpt class featuring a Telugu and Tamil playlist.",
-    type: "fitness",
-    link: "https://www.baharistudio.com/"
-  },
-  {
-    date: "SAT, OCT 24",
-    title: "Femme Forward: Pink Out Volleyball Tournament",
-    category: "FITNESS",
-    time: "6:00 PM",
-    location: "Dallas, TX",
-    price: "$5",
-    description: "Volleyball, a DJ, refreshments, and health and wellness vendors. Proceeds support a breast cancer awareness clinic.",
-    type: "fitness",
-    link: "https://linktr.ee/FemmeF0rward"
-  },
-  {
-    date: "SAT, OCT 24",
-    title: "Cedar Hill Volleyball Open Play",
-    category: "FITNESS",
-    time: "3:00 PM",
-    location: "Alan E. Sims Recreation Center, Cedar Hill, TX",
-    price: "FREE",
-    description: "Community volleyball open play.",
-    type: "fitness",
-    link: "https://cedarhilltx.com/222/Parks-Recreation"
-  },
-
-  // SUNDAY, OCTOBER 25
-  {
-    date: "SUN, OCT 25",
-    title: "The Hour Glass Flow: Drake vs. Future",
-    category: "PILATES",
-    time: "12:30 PM",
-    location: "Dallas, TX",
-    price: "$30",
-    description: "A 50-minute full-body sculpt session featuring a Drake vs. Future playlist.",
-    type: "pilates",
-    link: "https://www.bodiedbyla.com/hourglassflowsculpt"
-  },
-  {
-    date: "SUN, OCT 25",
-    title: "Weights & Worship",
-    category: "WELLNESS",
-    time: "8:00 PM",
-    location: "Iron Forge Global Gyms",
-    price: "FREE",
-    description: "Fitness, worship, prayer, and the presence of God.",
     type: "wellness",
-    link: "https://weightsandworshiptour.com"
+    description: "Full moon swim with a lunar crystal kit, wellness goodies, and a complimentary drink.",
+    link: "https://www.eventbrite.com/e/full-moon-swim-on-the-wet-deck-tickets-2002820689597"
   },
   {
-    date: "SUN, OCT 25",
-    title: "Pickleball & Prosecco: Fall Rally",
-    category: "FITNESS",
+    title: "Pickleball Social",
+    organizer: "Ghost Mammoth Pickleball",
+    date: "2026-10-26",
+    day: "MON",
     time: "6:00 PM",
-    location: "Texas Pickleball",
-    price: "$25",
-    description: "A social pickleball event hosted by Ladies Athletic Club of Dallas and Texas Pickleball.",
-    type: "fitness",
-    link: "https://sweatpals.com/event/pickleball-prosecco-fall-rally/2026-10-25/checkout"
-  },
-  {
-    date: "SUN, OCT 25",
-    title: "The She Club Open",
-    category: "FITNESS",
-    time: "4:00 PM",
-    location: "Plano, TX",
-    price: "$54.89",
-    description: "The last tennis instruction and social event of the season.",
-    type: "fitness",
-    link: "https://posh.vip/e/the-she-club-open--1"
-  },
-  {
-    date: "SUN, OCT 25",
-    title: "Sweat & Social: HYROX Intro",
-    category: "FITNESS",
-    time: "10:00 am",
-    location: "Hunger In The Wild Gym",
     price: "FREE",
-    description: "A 45-minute workout, Changing Chaos pop-up, free giveaways, and an introduction to HIIT and HYROX.",
-    type: "fitness",
-    link: "https://www.foyer.social/events/sweat-social-free-workout-hyrox-intro"
-  },
-  {
-    date: "SUN, OCT 25",
-    title: "HYROX x PUMA Workout Class",
+    location: "Dallas Farmers Market",
     category: "FITNESS",
-    time: "SEE INSTAGRAM FOR DETAILS",
-    location: "Westwood Fitness",
-    price: "SEE EVENT DETAILS",
-    description: "A workout class hosted by Glad Run Club and Fleet Feet DFW. Check Instagram for additional details.",
     type: "fitness",
-    link: "https://www.instagram.com/gladrunclub?psln=d3I5ZnM5cXBzdXlv"
+    description: "Connect with the community and enjoy a pickleball social.",
+    link: "https://www.instagram.com/ghostmammoth.pb/"
   },
   {
-    date: "SUN, OCT 25",
-    title: "Yoga in the Park",
-    category: "YOGA",
-    time: "9:30 AM",
-    location: "Lake Cliff Park, Dallas, TX",
-    price: "SEE EVENT DETAILS",
-    description: "Outdoor community yoga with Flow N Nature.",
+    title: "The Habit Challenge",
+    organizer: "MENT Fitness",
+    date: "2026-10-26",
+    day: "MON",
+    time: "See event details",
+    price: "$65",
+    location: "Dallas, TX",
+    category: "FITNESS",
+    type: "fitness",
+    description: "Four weeks of unlimited classes, recovery access, nutrition guidance, and accountability.",
+    link: "https://linktr.ee/mentfitnesschallenge"
+  },
+
+  // TUESDAY, OCTOBER 27
+  {
+    title: "Pumpkins, Pilates & Prosecco",
+    organizer: "HG Supply Co",
+    date: "2026-10-27",
+    day: "TUE",
+    time: "5:45 PM",
+    price: "$39.19",
+    location: "HG Supply Co, Dallas",
+    category: "PILATES",
+    type: "pilates",
+    description: "45-minute mat Pilates with Align Studio, pumpkin painting supplies, and a complimentary glass of La Marca Prosecco.",
+    link: "https://www.eventbrite.com/e/pumpkins-pilates-prosecco-on-the-rooftop-tickets-2003096140478"
+  },
+  {
+    title: "Track Workout",
+    organizer: "Fleet Feet × Run It Up",
+    date: "2026-10-27",
+    day: "TUE",
+    time: "6:30 PM",
+    price: "FREE",
+    location: "Pinkston High School Track",
+    category: "RUN",
+    type: "run",
+    description: "Get your miles in and connect with the Dallas running community.",
+    link: "https://www.instagram.com/runitup_dallas/"
+  },
+  {
+    title: "Pilates & Pickleball",
+    organizer: "Oak Cliff Pilates",
+    date: "2026-10-27",
+    day: "TUE",
+    time: "7:00 PM",
+    price: "FREE",
+    location: "Four Corners Brewery",
+    category: "PILATES",
+    type: "pilates",
+    description: "Enjoy a Pilates class and pickleball courts for free.",
+    link: "https://www.oakcliffpilates.com/events"
+  },
+
+  // WEDNESDAY, OCTOBER 28
+  {
+    title: "One-Year Celebration Golf Social",
+    organizer: "Golf Girly Club",
+    date: "2026-10-28",
+    day: "WED",
+    time: "6:30 PM",
+    price: "$40",
+    location: "Golf Ranch, Richardson",
+    category: "FITNESS",
+    type: "fitness",
+    description: "Celebrate with range time, golf balls, music, wine, and networking.",
+    link: "https://www.golfgirlyclub.com/services-store/p/basic-service-6c62w-e6g3j-ezpel"
+  },
+  {
+    title: "Yoga on the Plaza",
+    organizer: "Le Clique × Toyota Music Factory",
+    date: "2026-10-28",
+    day: "WED",
+    time: "6:00 PM",
+    price: "FREE",
+    location: "Toyota Music Factory, Irving",
+    category: "WELLNESS",
     type: "yoga",
-    link: "https://www.instagram.com/flow_n_nature_dtx?rpxt=MXZneHZsY3MyNTV3cw=="
+    description: "A 45-minute outdoor flow focused on strength, balance, and intention.",
+    link: "https://www.prekindle.com/event/43732-yoga-on-the-plaza-irving"
+  },
+
+  // THURSDAY, OCTOBER 29
+  {
+    title: "Pumpkin Spice Pilates",
+    organizer: "Velora Pilates Studio",
+    date: "2026-10-29",
+    day: "THU",
+    time: "All Thursday class times",
+    price: "$35 / class",
+    location: "Design District, Dallas",
+    category: "PILATES",
+    type: "pilates",
+    description: "Wear brown or autumn colors and enjoy pumpkin treats after class. Check the schedule for available times.",
+    link: "https://velorapilates.com/schedule/?_mt=%2Fschedule%2Fdaily%2F48541%3FactiveDate%3D2026-10-29%26locations%3D48717"
+  },
+  {
+    title: "Bring Your Boo to Pilates",
+    organizer: "11:11 Pilates",
+    date: "2026-10-29",
+    day: "THU",
+    time: "7:30 PM",
+    price: "$33.85 for you and your boo",
+    location: "Toyota Music Factory",
+    category: "PILATES",
+    type: "pilates",
+    description: "Bring your favorite person for Pilates, vendors, and surprises after class.",
+    link: "https://www.eventbrite.com/e/bring-your-boo-to-pilates-tickets-2002471918413"
+  },
+  {
+    title: "Line Dance Class",
+    organizer: "Fabulous Freda",
+    date: "2026-10-29",
+    day: "THU",
+    time: "6:30 PM",
+    price: "First class FREE / $10",
+    location: "Holford Recreation Center",
+    category: "FITNESS",
+    type: "fitness",
+    description: "A high-energy, low-impact aerobic line dance class.",
+    link: "https://www.eventbrite.com/e/line-dance-class-tickets-2003514664294"
+  },
+  {
+    title: "Halloween City Run",
+    organizer: "City Run Meet Up",
+    date: "2026-10-29",
+    day: "THU",
+    time: "7:00 PM",
+    price: "See event details",
+    location: "Burger Schmurger",
+    category: "RUN",
+    type: "run",
+    description: "A Halloween-themed city run with a Schmurger and fries special and happy-hour cocktail pricing.",
+    link: "https://www.instagram.com/cityrunofficial/"
+  },
+  {
+    title: "Halloween Sip & Stroll",
+    organizer: "The Star in Frisco",
+    date: "2026-10-29",
+    day: "THU",
+    time: "6:00 PM",
+    price: "$36.64",
+    location: "The Star District, Frisco",
+    category: "WELLNESS",
+    type: "social",
+    description: "Seasonal bites and cocktails, Halloween activities, festive photos, shopping, and music.",
+    link: "https://www.eventbrite.com/e/halloween-sip-stroll-in-the-star-district-tickets-2003019091021"
+  },
+
+  // FRIDAY, OCTOBER 30
+  {
+    title: "Spooky Sculpt",
+    organizer: "The Sculpt Squad",
+    date: "2026-10-30",
+    day: "FRI",
+    time: "6:30 PM",
+    price: "$20",
+    location: "Farmers Branch",
+    category: "FITNESS",
+    type: "fitness",
+    description: "A spooky-season HIIT, Pilates, and sculpt workout with socks and small treats included.",
+    link: "https://www.eventbrite.com/e/20-in-studio-hiit-pilates-sculpt-workout-tickets-2003589653589"
+  },
+  {
+    title: "Worship Night: Matcha & Mercy",
+    organizer: "Pilates Caliente × Matcha Mercy",
+    date: "2026-10-30",
+    day: "FRI",
+    time: "7:00 PM",
+    price: "FREE",
+    location: "Dallas, TX",
+    category: "WELLNESS",
+    type: "wellness",
+    description: "A night of matcha, worship, community, and mercy.",
+    link: "https://www.eventbrite.com/e/worship-night-matcha-mercy-tickets-2003427679119"
+  },
+  {
+    title: "Serve It Up: Final One of 2026",
+    organizer: "Outsiders",
+    date: "2026-10-30",
+    day: "FRI",
+    time: "6:30 PM",
+    price: "$9.95",
+    location: "Coppell, TX",
+    category: "FITNESS",
+    type: "fitness",
+    description: "Costumes, sand volleyball, $6 margaritas, and a DJ at the final Serve It Up of the year.",
+    link: "https://posh.vip/e/serve-it-up-final-one-of-26"
+  },
+  {
+    title: "Texas Tip Off Social",
+    organizer: "Side Line Society",
+    date: "2026-10-30",
+    day: "FRI",
+    time: "6:00 PM",
+    price: "Ticket / waitlist",
+    location: "American Airlines Center, Dallas",
+    category: "FITNESS",
+    type: "social",
+    description: "Rockets vs. Mavs, group seating, pregame happy hour at Velour, and a postgame on-court group photo. Check the link for waitlist availability.",
+    link: "https://www.tickettailor.com/events/sidelinesociete/2442141"
+  },
+
+  // SATURDAY, OCTOBER 31
+  {
+    title: "Community Workout + Trunk or Treat",
+    organizer: "Run It Up Dallas × MENT Fitness",
+    date: "2026-10-31",
+    day: "SAT",
+    time: "8:30 AM workout · 12:00 PM Trunk or Treat",
+    price: "$10 adults / $5 kids",
+    location: "See event details",
+    category: "FITNESS",
+    type: "fitness",
+    description: "Start with a community workout, then bring the kids back for the Halloween Trunk or Treat at noon.",
+    link: "https://events.eventnoire.com/e/community-workout-halloween"
+  },
+  {
+    title: "Trap Pilates Block Party",
+    organizer: "Pilates Caliente × DJ No Name",
+    date: "2026-10-31",
+    day: "SAT",
+    time: "10:00 AM",
+    price: "$25",
+    location: "Omni Hotel, Dallas",
+    category: "PILATES",
+    type: "pilates",
+    description: "Get your Pilates in to a playlist featuring Future, Key Glock, and Young Dolph.",
+    link: "https://app.arketa.co/httpscalendlycompilatescalientedallas"
+  },
+  {
+    title: "Halloween Party: Spicy Flow & Yogalates",
+    organizer: "222 Studio",
+    date: "2026-10-31",
+    day: "SAT",
+    time: "8:30 AM · 10:00 AM · 11:30 AM",
+    price: "$20",
+    location: "Dallas, TX",
+    category: "PILATES",
+    type: "yoga",
+    description: "Choose 8:30 AM Spicy Flow, 10:00 AM Yogalates with a live DJ, or 11:30 AM Yogalates. Costumes and treats after class.",
+    link: "https://momence.com/222-Studio/Spicy-Flow-%7C-Halloween-Party-%F0%9F%91%BB%F0%9F%AA%A9/134369141?skipPreview=true"
+  },
+  {
+    title: "Fall Fit Fest Boot Camp",
+    organizer: "Chiseled by Chi",
+    date: "2026-10-31",
+    day: "SAT",
+    time: "10:00 AM",
+    price: "$35",
+    location: "DDD Performance Center",
+    category: "FITNESS",
+    type: "fitness",
+    description: "A full-body boot camp to get your Halloween Saturday started strong.",
+    link: "https://app.acuityscheduling.com/schedule/a65a102b/appointment/99465067/calendar/11556584/datetime/2026-10-31T10%3A00%3A00-05%3A00?appointmentTypeIds%5B%5D=99465067"
+  },
+  {
+    title: "Spooky Hike",
+    organizer: "Fuerte_y_fierce",
+    date: "2026-10-31",
+    day: "SAT",
+    time: "8:00 AM",
+    price: "See event details",
+    location: "Cedar Ridge Preserve",
+    category: "RUN",
+    type: "walk",
+    description: "A spooky-season hike. Candy is available for RSVPs, and everyone is welcome.",
+    link: "https://sweatpals.com/host/fuerteyfierce"
+  },
+
+  // SUNDAY, NOVEMBER 1
+  {
+    title: "BFit Cardio Dance",
+    organizer: "BFit Cardio Dance",
+    date: "2026-11-01",
+    day: "SUN",
+    time: "12:00 PM",
+    price: "$13.54",
+    location: "Kumbala Dance Studio, Farmers Branch",
+    category: "FITNESS",
+    type: "fitness",
+    description: "Move, sweat, and have fun with a Sunday cardio dance class.",
+    link: "https://www.eventbrite.com/e/bfit-cardio-dance-sundays-tickets-1983900686358"
+  },
+  {
+    title: "Free 30-Minute Sculpt & Sweat",
+    organizer: "Kota Wellness × Klyde Warren Park",
+    date: "2026-11-01",
+    day: "SUN",
+    time: "See event details",
+    price: "FREE",
+    location: "Klyde Warren Park, Dallas",
+    category: "FITNESS",
+    type: "fitness",
+    description: "A high-energy, music-powered, low-impact workout. Mat-only, equipment-free, and open to all levels.",
+    link: "https://www.eventbrite.com/e/free-30-min-sculpt-sweat-kota-wellness-x-klyde-warren-park-tickets-1996247008540"
+  },
+  {
+    title: "Move, Groove & Connect",
+    organizer: "Move, Groove & Connect",
+    date: "2026-11-01",
+    day: "SUN",
+    time: "3:00 PM",
+    price: "FREE",
+    location: "Richardson, TX",
+    category: "FITNESS",
+    type: "fitness",
+    description: "Explore dance styles from around the world, including Hip-Hop, Afro, K-Pop, Latin, Salsa, Bachata, Brazilian Zouk, Bollywood, Belly Dance, and more.",
+    link: "https://www.eventbrite.com/e/move-groove-connect-experience-the-world-through-dance-tickets-2001241163191"
+  },
+  {
+    title: "Crunch and Brunch",
+    organizer: "Cash Cardio",
+    date: "2026-11-01",
+    day: "SUN",
+    time: "11:30 AM",
+    price: "$17.58",
+    location: "Elite Performance Training, Frisco",
+    category: "FITNESS",
+    type: "fitness",
+    description: "A high-energy dance class followed by fruit and mimosas.",
+    link: "https://www.eventbrite.com/e/cash-cardios-crunch-and-brunch-tickets-1380899219739"
+  },
+  {
+    title: "Community Care Sound Bath",
+    organizer: "Breezy Movements",
+    date: "2026-11-01",
+    day: "SUN",
+    time: "6:30 PM",
+    price: "Donation only",
+    location: "The Prosperith House",
+    category: "WELLNESS",
+    type: "wellness",
+    description: "A gratitude ritual, light reflection activity, and restorative sound bath featuring crystal singing bowls.",
+    link: "https://www.eventbrite.com/e/community-care-sound-bath-vii-tickets-1998786295616"
   }
 ];
 
-const eventGrid = document.getElementById("event-grid");
+// Find the event grid already present in your HTML.
+const eventContainer =
+  document.querySelector("#events-grid") ||
+  document.querySelector("#event-grid") ||
+  document.querySelector("#events-container") ||
+  document.querySelector(".events-grid") ||
+  document.querySelector(".event-grid");
 
-/* ---------------------------------
-   RENDER EVENTS
---------------------------------- */
+const filterButtons = document.querySelectorAll(
+  "[data-filter], .filter-btn, .filter-button"
+);
 
-function renderEvents(filter = "all") {
-  if (!eventGrid) return;
+const viewAllButton =
+  document.querySelector("#view-all-events") ||
+  document.querySelector("#view-all") ||
+  document.querySelector(".view-all-events");
 
-  let filteredEvents = events;
+// Update the footer year.
+const footerYear =
+  document.querySelector("#year") ||
+  document.querySelector("#current-year") ||
+  document.querySelector(".current-year");
+
+if (footerYear) {
+  footerYear.textContent = new Date().getFullYear();
+}
+
+// Escape text before inserting it into HTML.
+function escapeHTML(value) {
+  return String(value).replace(/[&<>"']/g, character => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[character]);
+}
+
+// Format event dates.
+function formatEventDate(dateString) {
+  return new Date(dateString + "T12:00:00").toLocaleDateString(
+    "en-US",
+    { month: "short", day: "numeric" }
+  );
+}
+
+// Render the event cards and apply category filters.
+function renderEvents(filter = "all", showAll = false) {
+  if (!eventContainer) {
+    console.warn(
+      "Event grid not found. Check the event container ID or class in your HTML."
+    );
+    return;
+  }
+
+  let filteredEvents = [...events];
 
   if (filter === "fitness") {
-    filteredEvents = events.filter(event => event.category === "FITNESS");
-  }
-
-  if (filter === "wellness") {
-    filteredEvents = events.filter(event =>
-      event.category === "WELLNESS"
+    filteredEvents = filteredEvents.filter(
+      event => event.category === "FITNESS"
+    );
+  } else if (filter === "wellness") {
+    filteredEvents = filteredEvents.filter(
+      event => event.category === "WELLNESS"
+    );
+  } else if (filter === "pilates") {
+    filteredEvents = filteredEvents.filter(
+      event =>
+        event.category === "PILATES" ||
+        event.type === "yoga"
+    );
+  } else if (filter === "run") {
+    filteredEvents = filteredEvents.filter(
+      event => event.category === "RUN"
+    );
+  } else if (filter === "free") {
+    filteredEvents = filteredEvents.filter(
+      event => event.price.toUpperCase().includes("FREE")
     );
   }
 
-  if (filter === "pilates") {
-    filteredEvents = events.filter(event =>
-      event.category === "PILATES" || event.type === "yoga"
-    );
-  }
+  filteredEvents.sort((a, b) => {
+    const dateDifference = a.date.localeCompare(b.date);
+    if (dateDifference !== 0) return dateDifference;
 
-  if (filter === "run") {
-    filteredEvents = events.filter(event =>
-      event.category === "RUN" || event.category === "WALK"
-    );
-  }
+    function toMinutes(time) {
+      const match = time.match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+      if (!match) return 9999;
 
-  if (filter === "free") {
-    filteredEvents = events.filter(event =>
-      event.price.toUpperCase() === "FREE"
-    );
-  }
+      let hour = Number(match[1]) % 12;
+      if (match[3].toUpperCase() === "PM") hour += 12;
 
-  if (filteredEvents.length === 0) {
-    eventGrid.innerHTML = `
+      return hour * 60 + Number(match[2]);
+    }
+
+    return toMinutes(a.time) - toMinutes(b.time);
+  });
+
+  const visibleEvents = showAll
+    ? filteredEvents
+    : filteredEvents.slice(0, 6);
+
+  if (!visibleEvents.length) {
+    eventContainer.innerHTML = `
       <div class="no-events">
-        <p>No events found in this category this week.</p>
+        <p>No events found in this category just yet.</p>
+        <p>Check back soon for more Dallas fitness and wellness finds!</p>
       </div>
     `;
     return;
   }
 
-  eventGrid.innerHTML = filteredEvents.map(event => `
-    <article class="event-card">
-      <div class="event-image ${event.type}">
-        <span class="event-date">${event.date}</span>
-      </div>
-
-      <div class="event-body">
-        <span class="event-category">${event.category}</span>
-
-        <h3>${event.title}</h3>
-
-        <div class="event-meta">
-          <span>🕐 &nbsp; ${event.time}</span>
-          <span>⌖ &nbsp; ${event.location}</span>
-          <span>♥ &nbsp; ${event.price}</span>
+  eventContainer.innerHTML = visibleEvents.map(event => `
+    <article class="event-card" data-category="${escapeHTML(event.category.toLowerCase())}">
+      <div class="event-card-content">
+        <div class="event-card-top">
+          <span class="event-category">${escapeHTML(event.category)}</span>
+          <span class="event-price">${escapeHTML(event.price)}</span>
         </div>
 
-        <p class="event-description">${event.description}</p>
+        <p class="event-date">${escapeHTML(event.day)}, ${formatEventDate(event.date)}</p>
 
-        ${
-          event.link
-            ? `<a class="event-link" href="${event.link}" target="_blank" rel="noopener noreferrer">
-                 VIEW DETAILS &nbsp; →
-               </a>`
-            : ""
-        }
+        <h3 class="event-title">${escapeHTML(event.title)}</h3>
+
+        <p class="event-organizer">${escapeHTML(event.organizer)}</p>
+
+        <div class="event-details">
+          <p class="event-time">
+            <span aria-hidden="true">◷</span>
+            ${escapeHTML(event.time)}
+          </p>
+          <p class="event-location">
+            <span aria-hidden="true">⌖</span>
+            ${escapeHTML(event.location)}
+          </p>
+        </div>
+
+        <p class="event-description">${escapeHTML(event.description)}</p>
+
+        <a
+          class="event-link"
+          href="${escapeHTML(event.link)}"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="View details for ${escapeHTML(event.title)}"
+        >
+          View Event <span aria-hidden="true">↗</span>
+        </a>
       </div>
     </article>
   `).join("");
+
+  if (viewAllButton) {
+    const hasMore = filteredEvents.length > 6;
+
+    viewAllButton.hidden = !hasMore;
+    viewAllButton.textContent = showAll ? "Show Less" : "View All Events";
+    viewAllButton.setAttribute("aria-expanded", String(showAll));
+  }
 }
 
-/* Show all events when page loads */
-renderEvents();
+// Filter buttons.
+let activeFilter = "all";
+let showingAllEvents = false;
 
-/* ---------------------------------
-   FILTER LINKS
---------------------------------- */
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const selectedFilter = (
+      button.dataset.filter ||
+      button.textContent.trim()
+    ).toLowerCase();
 
-document.querySelectorAll("[data-filter]").forEach(link => {
-  link.addEventListener("click", event => {
-    event.preventDefault();
+    activeFilter = selectedFilter;
+    showingAllEvents = false;
 
-    const filter = link.dataset.filter;
+    filterButtons.forEach(item => {
+      const itemFilter = (
+        item.dataset.filter ||
+        item.textContent.trim()
+      ).toLowerCase();
 
-    renderEvents(filter);
-
-    const eventsSection = document.getElementById("events");
-
-    if (eventsSection) {
-      eventsSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    }
-
-    /* Update active navigation state */
-    document.querySelectorAll(".main-nav a").forEach(navLink => {
-      navLink.classList.remove("active");
+      const active = itemFilter === selectedFilter;
+      item.classList.toggle("active", active);
+      item.setAttribute("aria-pressed", String(active));
     });
 
-    const matchingNav = document.querySelector(
-      `.main-nav a[data-filter="${filter}"]`
-    );
-
-    if (matchingNav) {
-      matchingNav.classList.add("active");
-    }
-
-    /* Close mobile menu */
-    if (mainNav && menuToggle) {
-      mainNav.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
-    }
+    renderEvents(activeFilter, showingAllEvents);
   });
 });
 
-/* ---------------------------------
-   VIEW ALL EVENTS
---------------------------------- */
-
-document.querySelectorAll('a[href="#events"]:not([data-filter])').forEach(link => {
-  link.addEventListener("click", event => {
-    event.preventDefault();
-
-    renderEvents("all");
-
-    const eventsSection = document.getElementById("events");
-
-    if (eventsSection) {
-      eventsSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    }
-
-    document.querySelectorAll(".main-nav a").forEach(navLink => {
-      navLink.classList.remove("active");
-    });
-
-    const thisWeek = document.querySelector(
-      '.main-nav a[data-filter="all"]'
-    );
-
-    if (thisWeek) {
-      thisWeek.classList.add("active");
-    }
+// View All Events button.
+if (viewAllButton) {
+  viewAllButton.addEventListener("click", () => {
+    showingAllEvents = !showingAllEvents;
+    renderEvents(activeFilter, showingAllEvents);
   });
-});
-
-/* ---------------------------------
-   YEAR
---------------------------------- */
-
-const yearElement = document.getElementById("year");
-
-if (yearElement) {
-  yearElement.textContent = new Date().getFullYear();
 }
 
-/* ---------------------------------
-   MOBILE MENU
---------------------------------- */
+// Mobile navigation.
+const menuToggle =
+  document.querySelector("#menu-toggle") ||
+  document.querySelector(".menu-toggle") ||
+  document.querySelector(".mobile-menu-toggle") ||
+  document.querySelector("[aria-label='Toggle menu']");
 
-const menuToggle = document.querySelector(".menu-toggle");
-const mainNav = document.querySelector(".main-nav");
+const mainNav =
+  document.querySelector("#main-nav") ||
+  document.querySelector("#nav-menu") ||
+  document.querySelector(".main-nav") ||
+  document.querySelector(".nav-menu");
 
 if (menuToggle && mainNav) {
   menuToggle.addEventListener("click", () => {
-    const isOpen = mainNav.classList.toggle("open");
+    const isOpen = mainNav.classList.toggle("active");
+
+    menuToggle.classList.toggle("active", isOpen);
     menuToggle.setAttribute("aria-expanded", String(isOpen));
   });
-}
 
-document.querySelectorAll(".main-nav a").forEach(link => {
-  link.addEventListener("click", () => {
-    if (mainNav && menuToggle) {
-      mainNav.classList.remove("open");
+  mainNav.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mainNav.classList.remove("active");
+      menuToggle.classList.remove("active");
       menuToggle.setAttribute("aria-expanded", "false");
-    }
+    });
   });
-});
-
-/* Newsletter signup is handled by the Kit link/form embedded in the page. */
-
-/* ---------------------------------
-   CLEAN INTERNAL URLS
---------------------------------- */
-
-if (window.location.search) {
-  window.history.replaceState(
-    {},
-    document.title,
-    window.location.pathname + window.location.hash
-  );
 }
+
+// Render the calendar on page load.
+renderEvents();
