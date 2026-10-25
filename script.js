@@ -1,3 +1,4 @@
+
 const events = [
   // MONDAY, OCTOBER 26
   {
@@ -10,8 +11,8 @@ const events = [
     location: "W Dallas — Wet Deck",
     category: "WELLNESS",
     type: "wellness",
-    description: "Full moon swim with a lunar crystal kit, wellness goodies, and a complimentary drink.",
-    link: "https://www.eventbrite.com/e/full-moon-swim-on-the-wet-deck-tickets-2002820689597"
+    description: "Celebrate the full moon with a swim, lunar crystal kit, wellness goodies, and a complimentary drink.",
+    link: "https://www.eventbrite.com/e/full-moon-swim-on-the-wet-deck-tickets-2002820689597?aff=oddtdtcreator&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAVK-UVleHRuA2FlbQIxMQBwZG9mAmZkaWQWUQ9EE4F2YjumqGvIOSHKivkixPhRiHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp4GZ4c5aeZbT7Lk2r1NGwoCMWbohOxLRBMuHNTPtAciyfPYjDuN0wclGrhaD_aem_wGizUSRJqjH3hqjML1bJMg"
   },
   {
     title: "Pickleball Social",
@@ -23,21 +24,21 @@ const events = [
     location: "Dallas Farmers Market",
     category: "FITNESS",
     type: "fitness",
-    description: "Connect with the community and enjoy a pickleball social.",
-    link: "https://www.instagram.com/ghostmammoth.pb/"
+    description: "Meet new people and get moving at this community pickleball social.",
+    link: "https://www.instagram.com/ghostmammoth.pb?obrf=MWNkdnkzNGJhZGl3dA=="
   },
   {
     title: "The Habit Challenge",
     organizer: "MENT Fitness",
     date: "2026-10-26",
     day: "MON",
-    time: "See event details",
+    time: "SEE EVENT DETAILS",
     price: "$65",
     location: "Dallas, TX",
     category: "FITNESS",
     type: "fitness",
-    description: "Four weeks of unlimited classes, recovery access, nutrition guidance, and accountability.",
-    link: "https://linktr.ee/mentfitnesschallenge"
+    description: "A four-week challenge featuring unlimited classes, recovery access, nutrition guidance, and accountability.",
+    link: "https://linktr.ee/mentfitnesschallenge?utm_source=linktree_profile_share&ltsid=9810c22f-364d-4a1a-b7f2-979286507060"
   },
 
   // TUESDAY, OCTOBER 27
@@ -51,8 +52,8 @@ const events = [
     location: "HG Supply Co, Dallas",
     category: "PILATES",
     type: "pilates",
-    description: "45-minute mat Pilates with Align Studio, pumpkin painting supplies, and a complimentary glass of La Marca Prosecco.",
-    link: "https://www.eventbrite.com/e/pumpkins-pilates-prosecco-on-the-rooftop-tickets-2003096140478"
+    description: "Enjoy 45 minutes of mat Pilates with Align Studio, pumpkin painting supplies, and a complimentary glass of La Marca Prosecco.",
+    link: "https://www.eventbrite.com/e/pumpkins-pilates-prosecco-on-the-rooftop-tickets-2003096140478?utm_campaign=button_list_PUMPKINSPILATESPROSECCO&utm_medium=referral&utm_source=later-linkinbio&aff=oddtdtcreator&fbclid=PAVERFWAVJ5IdleHRuA2FlbQIxMQBwZG9mAmZkaWQWUQ5-5J2Z9vuZTIkgeGVAMtg7FHWrx3NydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp69cGfJDfUMLKiMpv3NDEKB2l8NA6MQbjyVP79rrD9kFqMstConLWQrUyWjs_aem__Sz1_3i9_4FTS1baBcoxaw"
   },
   {
     title: "Track Workout",
@@ -64,8 +65,8 @@ const events = [
     location: "Pinkston High School Track",
     category: "RUN",
     type: "run",
-    description: "Get your miles in and connect with the Dallas running community.",
-    link: "https://www.instagram.com/runitup_dallas/"
+    description: "Get your miles in and connect with the local running community.",
+    link: "https://www.instagram.com/runitup_dallas?obrf=MWJ2dnNreHZzZ3c1Mg=="
   },
   {
     title: "Pilates & Pickleball",
@@ -74,11 +75,11 @@ const events = [
     day: "TUE",
     time: "7:00 PM",
     price: "FREE",
-    location: "Four Corners Brewery",
+    location: "Four Corners Brewing Company",
     category: "PILATES",
     type: "pilates",
-    description: "Enjoy a Pilates class and pickleball courts for free.",
-    link: "https://www.oakcliffpilates.com/events"
+    description: "Enjoy a Pilates class and pickleball courts at no cost.",
+    link: "https://www.oakcliffpilates.com/events?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAVLQeJleHRuA2FlbQIxMQBwZG9mAmZkaWQWUQ8eIaKVkkshDPLtsPcb_OU3xA-DJHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp70ErPWPrtByqMzvpwLmD-qs0YZb4GFoq7D54hCV1ydTomydX9BEUk18h0FJ_aem_fDV05933IuyEapLCZwrfPw"
   },
 
   // WEDNESDAY, OCTOBER 28
@@ -105,7 +106,7 @@ const events = [
     location: "Toyota Music Factory, Irving",
     category: "WELLNESS",
     type: "yoga",
-    description: "A 45-minute outdoor flow focused on strength, balance, and intention.",
+    description: "A 45-minute dynamic outdoor yoga flow focused on strength, balance, and intention.",
     link: "https://www.prekindle.com/event/43732-yoga-on-the-plaza-irving"
   },
 
@@ -120,7 +121,7 @@ const events = [
     location: "Design District, Dallas",
     category: "PILATES",
     type: "pilates",
-    description: "Wear brown or autumn colors and enjoy pumpkin treats after class. Check the schedule for available times.",
+    description: "Wear brown or autumn colors and enjoy pumpkin treats after class. Check the schedule for available class times.",
     link: "https://velorapilates.com/schedule/?_mt=%2Fschedule%2Fdaily%2F48541%3FactiveDate%3D2026-10-29%26locations%3D48717"
   },
   {
@@ -133,8 +134,8 @@ const events = [
     location: "Toyota Music Factory",
     category: "PILATES",
     type: "pilates",
-    description: "Bring your favorite person for Pilates, vendors, and surprises after class.",
-    link: "https://www.eventbrite.com/e/bring-your-boo-to-pilates-tickets-2002471918413"
+    description: "Bring your favorite person for Pilates, then stay for vendors and post-class surprises.",
+    link: "https://www.eventbrite.com/e/bring-your-boo-to-pilates-tickets-2002471918413?aff=oddtdtcreator&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAVJ9yxleHRuA2FlbQIxMQBwZG9mAmZkaWQWUQ5HNgiGQcaqCoTDFW1erxmaTvHn6nNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABpzt_txDle3rbRolYAQaU8-2DQh4lb1Lm6tAkEn-fLXGDBBzjwyml1v44mJjv_aem_TDkcTiUXm5RqfbblzStXQA"
   },
   {
     title: "Line Dance Class",
@@ -146,8 +147,8 @@ const events = [
     location: "Holford Recreation Center",
     category: "FITNESS",
     type: "fitness",
-    description: "A high-energy, low-impact aerobic line dance class.",
-    link: "https://www.eventbrite.com/e/line-dance-class-tickets-2003514664294"
+    description: "A high-energy, low-impact aerobic line dancing class.",
+    link: "https://www.eventbrite.com/e/line-dance-class-tickets-2003514664294?aff=ebdsoporgprofile"
   },
   {
     title: "Halloween City Run",
@@ -159,8 +160,8 @@ const events = [
     location: "Burger Schmurger",
     category: "RUN",
     type: "run",
-    description: "A Halloween-themed city run with a Schmurger and fries special and happy-hour cocktail pricing.",
-    link: "https://www.instagram.com/cityrunofficial/"
+    description: "Meet up for a Halloween-themed run, with a Schmurger and fries special plus happy-hour cocktail pricing.",
+    link: "https://www.instagram.com/cityrunofficial?mdxt=aWFkenRmcHRsOGRn"
   },
   {
     title: "Halloween Sip & Stroll",
@@ -172,7 +173,7 @@ const events = [
     location: "The Star District, Frisco",
     category: "WELLNESS",
     type: "social",
-    description: "Seasonal bites and cocktails, Halloween activities, festive photos, shopping, and music.",
+    description: "Enjoy seasonal bites and cocktails, Halloween activations, festive photo spots, shopping, and music.",
     link: "https://www.eventbrite.com/e/halloween-sip-stroll-in-the-star-district-tickets-2003019091021"
   },
 
@@ -184,11 +185,11 @@ const events = [
     day: "FRI",
     time: "6:30 PM",
     price: "$20",
-    location: "Farmers Branch",
+    location: "Farmers Branch, TX",
     category: "FITNESS",
     type: "fitness",
-    description: "A spooky-season HIIT, Pilates, and sculpt workout with socks and small treats included.",
-    link: "https://www.eventbrite.com/e/20-in-studio-hiit-pilates-sculpt-workout-tickets-2003589653589"
+    description: "A spooky-season sculpt workout with socks and small treats included.",
+    link: "https://www.eventbrite.com/e/20-in-studio-hiit-pilates-sculpt-workout-tickets-2003589653589?aff=oddtdtcreator&keep_tld=true"
   },
   {
     title: "Worship Night: Matcha & Mercy",
@@ -201,7 +202,7 @@ const events = [
     category: "WELLNESS",
     type: "wellness",
     description: "A night of matcha, worship, community, and mercy.",
-    link: "https://www.eventbrite.com/e/worship-night-matcha-mercy-tickets-2003427679119"
+    link: "https://www.eventbrite.com/e/worship-night-matcha-mercy-tickets-2003427679119?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAVJ7htleHRuA2FlbQIxMQBwZG9mAmZkaWQWUQ4OBF023jrrrtyR89NtEpxZ40PG-nNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABpxKHvINnh8LRs-sMhoEiJ5UjLGyUH05_uKSn1UJoOL3_qe9tlvih41QEXrsW_aem_ZN5J_mrOaQpsKqcf9cjTsw"
   },
   {
     title: "Serve It Up: Final One of 2026",
@@ -213,8 +214,8 @@ const events = [
     location: "Coppell, TX",
     category: "FITNESS",
     type: "fitness",
-    description: "Costumes, sand volleyball, $6 margaritas, and a DJ at the final Serve It Up of the year.",
-    link: "https://posh.vip/e/serve-it-up-final-one-of-26"
+    description: "A costume-friendly sand volleyball social with $6 margaritas and a DJ.",
+    link: "https://posh.vip/e/serve-it-up-final-one-of-26?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAVJ70JleHRuA2FlbQIxMQBwZG9mAmZkaWQWUQ6gPra3JFu90YZ34u3zgc-TWzMd9XNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp0izUBTZwY1drot2mi2GodDjtNQSL3J5S4N406Imhn032AHu35D70z4u1iox_aem_5ARxWoqNEAriVNaKhEijow"
   },
   {
     title: "Texas Tip Off Social",
@@ -226,8 +227,8 @@ const events = [
     location: "American Airlines Center, Dallas",
     category: "FITNESS",
     type: "social",
-    description: "Rockets vs. Mavs, group seating, pregame happy hour at Velour, and a postgame on-court group photo. Check the link for waitlist availability.",
-    link: "https://www.tickettailor.com/events/sidelinesociete/2442141"
+    description: "Rockets vs. Mavs with group seating, pregame happy hour at Velour, and a postgame on-court group photo. Check the event page for waitlist availability.",
+    link: "https://www.tickettailor.com/events/sidelinesociete/2442141?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAVJ9I5leHRuA2FlbQIxMQBwZG9mAmZkaWQWUQ6RAKF48LtiDRxMuqOxfmZ18UgUcHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABpxA1FPLJtVp9cZ8Ii8pvP1DZ6O3dN4x29BOChc0PyOFvNK2EV0KuUegzf_aem_w-fxFJeBaf52aEpB_y0Ypg"
   },
 
   // SATURDAY, OCTOBER 31
@@ -242,7 +243,7 @@ const events = [
     category: "FITNESS",
     type: "fitness",
     description: "Start with a community workout, then bring the kids back for the Halloween Trunk or Treat at noon.",
-    link: "https://events.eventnoire.com/e/community-workout-halloween"
+    link: "https://events.eventnoire.com/e/community-workout-halloween?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAVJ5d5leHRuA2FlbQIxMQBwZG9mAmZkaWQWUQ6jUyAeWLWoEsL5A53lMWvV_KbdF3NydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp1QeKIoaqOcCdJ2eLGxTMYHyAXUq_2yrTpoKxF1eyvoey_s0hG2nz0lOllAD_aem_GeW07uUKpygk068gfqxn6w"
   },
   {
     title: "Trap Pilates Block Party",
@@ -255,7 +256,7 @@ const events = [
     category: "PILATES",
     type: "pilates",
     description: "Get your Pilates in to a playlist featuring Future, Key Glock, and Young Dolph.",
-    link: "https://app.arketa.co/httpscalendlycompilatescalientedallas"
+    link: "https://app.arketa.co/httpscalendlycompilatescalientedallas?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAVJ6E1leHRuA2FlbQIxMQBwZG9mAmZkaWQWUQ5YF_YBYhK-0tybTVQomhxrXR-y23NydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp4dxPBxosMz8-sO7HF5JRxONnm3bB14g7ydHwYHtKk34LBoALXNUaN9OB861_aem_Oz7YISdTImY7rJeewUZcLg"
   },
   {
     title: "Halloween Party: Spicy Flow & Yogalates",
@@ -267,8 +268,8 @@ const events = [
     location: "Dallas, TX",
     category: "PILATES",
     type: "yoga",
-    description: "Choose 8:30 AM Spicy Flow, 10:00 AM Yogalates with a live DJ, or 11:30 AM Yogalates. Costumes and treats after class.",
-    link: "https://momence.com/222-Studio/Spicy-Flow-%7C-Halloween-Party-%F0%9F%91%BB%F0%9F%AA%A9/134369141?skipPreview=true"
+    description: "Choose from 8:30 AM Spicy Flow, 10:00 AM Yogalates with a live DJ, or 11:30 AM Yogalates. Costumes and post-class treats encouraged.",
+    link: "https://momence.com/222-Studio/Spicy-Flow-%7C-Halloween-Party-%F0%9F%91%BB%F0%9F%AA%A9/134369141?skipPreview=true&fbclid=PAVERFWAVJ6hRleHRuA2FlbQIxMQBwZG9mAmZkaWQWUQ7GXbMW9gSe6mB35Nuqkr2Q0v22YHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp4sAiIS9sXdhtqf-6ksk9cIPU-_5gjcHYFWvG_4QbyDvqXo09NOFl9nSMgCx_aem_s00yiSN_mv9L9N19bbqwvw"
   },
   {
     title: "Fall Fit Fest Boot Camp",
@@ -280,8 +281,8 @@ const events = [
     location: "DDD Performance Center",
     category: "FITNESS",
     type: "fitness",
-    description: "A full-body boot camp to get your Halloween Saturday started strong.",
-    link: "https://app.acuityscheduling.com/schedule/a65a102b/appointment/99465067/calendar/11556584/datetime/2026-10-31T10%3A00%3A00-05%3A00?appointmentTypeIds%5B%5D=99465067"
+    description: "Show up for a full-body boot camp and a strong start to your Halloween Saturday.",
+    link: "https://app.acuityscheduling.com/schedule/a65a102b/appointment/99465067/calendar/11556584/datetime/2026-10-31T10%3A00%3A00-05%3A00?appointmentTypeIds%5B%5D=99465067&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAVJ7MJleHRuA2FlbQIxMQBwZG9mAmZkaWQWUQ6gjs8lGr5btbz57fzqAM0szbRxjHNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp2o4ql5Kv8XW9J5Gn1FSAalO9wTycnsOR44UVimsOHn8NDhGC0dKp96l1-Rc_aem_fHfWokAhHDZWbcfLsQXsyQ"
   },
   {
     title: "Spooky Hike",
@@ -293,8 +294,8 @@ const events = [
     location: "Cedar Ridge Preserve",
     category: "RUN",
     type: "walk",
-    description: "A spooky-season hike. Candy is available for RSVPs, and everyone is welcome.",
-    link: "https://sweatpals.com/host/fuerteyfierce"
+    description: "Get outside for a spooky-season hike. Candy is available for RSVPs, and everyone is welcome.",
+    link: "https://sweatpals.com/host/fuerteyfierce?fbclid=PAVERFWAVK-phleHRuA2FlbQIxMQBwZG9mAmZkaWQWUQ9XYJYaTKwen9u05zV8QDo_nGIBpnNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp2gIKG1M1KMrZFcpLHcx04n12GuYKsOEMJ8Lga4mEqlMSrCaPBxDV2Lr-0pl_aem_-HuXIMXIITnX290krn-rJw"
   },
 
   // SUNDAY, NOVEMBER 1
@@ -309,20 +310,20 @@ const events = [
     category: "FITNESS",
     type: "fitness",
     description: "Move, sweat, and have fun with a Sunday cardio dance class.",
-    link: "https://www.eventbrite.com/e/bfit-cardio-dance-sundays-tickets-1983900686358"
+    link: "https://www.eventbrite.com/e/bfit-cardio-dance-sundays-tickets-1983900686358?dsrp_sid=6f31398d-3a62-43ff-aec8-9adbda2ea9f0&dsrp_item_id=1983900830790&aff=ebdssbdestsearch"
   },
   {
     title: "Free 30-Minute Sculpt & Sweat",
     organizer: "Kota Wellness × Klyde Warren Park",
     date: "2026-11-01",
     day: "SUN",
-    time: "See event details",
+    time: "SEE EVENT DETAILS",
     price: "FREE",
     location: "Klyde Warren Park, Dallas",
     category: "FITNESS",
     type: "fitness",
     description: "A high-energy, music-powered, low-impact workout. Mat-only, equipment-free, and open to all levels.",
-    link: "https://www.eventbrite.com/e/free-30-min-sculpt-sweat-kota-wellness-x-klyde-warren-park-tickets-1996247008540"
+    link: "https://www.eventbrite.com/e/free-30-min-sculpt-sweat-kota-wellness-x-klyde-warren-park-tickets-1996247008540?dsrp_sid=6be3c630-3707-4ee6-91c1-60e86abdb8c5&dsrp_item_id=1996247284365&aff=ebdssbdestsearch"
   },
   {
     title: "Move, Groove & Connect",
@@ -334,8 +335,8 @@ const events = [
     location: "Richardson, TX",
     category: "FITNESS",
     type: "fitness",
-    description: "Explore dance styles from around the world, including Hip-Hop, Afro, K-Pop, Latin, Salsa, Bachata, Brazilian Zouk, Bollywood, Belly Dance, and more.",
-    link: "https://www.eventbrite.com/e/move-groove-connect-experience-the-world-through-dance-tickets-2001241163191"
+    description: "Experience dance styles from around the world, including Hip-Hop, Afro, K-Pop, Latin, Salsa, Bachata, Brazilian Zouk, Lambada, Bollywood, Belly Dance, and more.",
+    link: "https://www.eventbrite.com/e/move-groove-connect-experience-the-world-through-dance-tickets-2001241163191?dsrp_sid=6be3c630-3707-4ee6-91c1-60e86abdb8c5&dsrp_item_id=2001241209329&aff=ebdssbdestsearch"
   },
   {
     title: "Crunch and Brunch",
@@ -348,7 +349,7 @@ const events = [
     category: "FITNESS",
     type: "fitness",
     description: "A high-energy dance class followed by fruit and mimosas.",
-    link: "https://www.eventbrite.com/e/cash-cardios-crunch-and-brunch-tickets-1380899219739"
+    link: "https://www.eventbrite.com/e/cash-cardios-crunch-and-brunch-tickets-1380899219739?dsrp_sid=abf9de40-361c-4119-971e-09f61fc69de7&dsrp_item_id=1997333731959&aff=ebdssbdestsearch"
   },
   {
     title: "Community Care Sound Bath",
@@ -361,11 +362,11 @@ const events = [
     category: "WELLNESS",
     type: "wellness",
     description: "A gratitude ritual, light reflection activity, and restorative sound bath featuring crystal singing bowls.",
-    link: "https://www.eventbrite.com/e/community-care-sound-bath-vii-tickets-1998786295616"
+    link: "https://www.eventbrite.com/e/community-care-sound-bath-vii-tickets-1998786295616?aff=ebdsoporgprofile&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAdGRleAVK_DRleHRuA2FlbQIxMQBwZG9mAmZkaWQWUQ8oHuOcWLUQBbKoS7Jjzn-0MgjA8XNydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp2slDEYXkQcqEMTnrdBf5NWcSE7-X9FI_v9YnussQT7wXnaZhQCkknveC4Cf_aem_s3_l0YpUIg8Jalrk01RsJg"
   }
 ];
 
-// Find the event grid already present in your HTML.
+// Calendar elements — supports common IDs and classes.
 const eventContainer =
   document.querySelector("#events-grid") ||
   document.querySelector("#event-grid") ||
@@ -382,40 +383,30 @@ const viewAllButton =
   document.querySelector("#view-all") ||
   document.querySelector(".view-all-events");
 
-// Update the footer year.
 const footerYear =
   document.querySelector("#year") ||
   document.querySelector("#current-year") ||
   document.querySelector(".current-year");
 
+// Keep the footer year current.
 if (footerYear) {
   footerYear.textContent = new Date().getFullYear();
 }
 
-// Escape text before inserting it into HTML.
-function escapeHTML(value) {
-  return String(value).replace(/[&<>"']/g, character => ({
-    "&": "&amp;",
-    "<": "&lt;",
-    ">": "&gt;",
-    '"': "&quot;",
-    "'": "&#39;"
-  })[character]);
-}
-
-// Format event dates.
+// Format dates for the event cards.
 function formatEventDate(dateString) {
-  return new Date(dateString + "T12:00:00").toLocaleDateString(
-    "en-US",
-    { month: "short", day: "numeric" }
-  );
+  const date = new Date(`${dateString}T12:00:00`);
+  return date.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric"
+  });
 }
 
-// Render the event cards and apply category filters.
+// Render event cards.
 function renderEvents(filter = "all", showAll = false) {
   if (!eventContainer) {
     console.warn(
-      "Event grid not found. Check the event container ID or class in your HTML."
+      "Dallas Fitness Finds: Could not find the event container. Check your HTML event-grid ID or class."
     );
     return;
   }
@@ -438,7 +429,10 @@ function renderEvents(filter = "all", showAll = false) {
     );
   } else if (filter === "run") {
     filteredEvents = filteredEvents.filter(
-      event => event.category === "RUN"
+      event =>
+        event.category === "RUN" ||
+        event.type === "run" ||
+        event.type === "walk"
     );
   } else if (filter === "free") {
     filteredEvents = filteredEvents.filter(
@@ -446,28 +440,31 @@ function renderEvents(filter = "all", showAll = false) {
     );
   }
 
+  // Sort by date, then by time where possible.
   filteredEvents.sort((a, b) => {
-    const dateDifference = a.date.localeCompare(b.date);
-    if (dateDifference !== 0) return dateDifference;
+    const dateComparison = a.date.localeCompare(b.date);
+    if (dateComparison !== 0) return dateComparison;
 
-    function toMinutes(time) {
+    const getMinutes = time => {
       const match = time.match(/(\d{1,2}):(\d{2})\s*(AM|PM)/i);
       if (!match) return 9999;
 
       let hour = Number(match[1]) % 12;
-      if (match[3].toUpperCase() === "PM") hour += 12;
+      const minute = Number(match[2]);
+      const period = match[3].toUpperCase();
 
-      return hour * 60 + Number(match[2]);
-    }
+      if (period === "PM") hour += 12;
+      return hour * 60 + minute;
+    };
 
-    return toMinutes(a.time) - toMinutes(b.time);
+    return getMinutes(a.time) - getMinutes(b.time);
   });
 
   const visibleEvents = showAll
     ? filteredEvents
     : filteredEvents.slice(0, 6);
 
-  if (!visibleEvents.length) {
+  if (visibleEvents.length === 0) {
     eventContainer.innerHTML = `
       <div class="no-events">
         <p>No events found in this category just yet.</p>
@@ -477,85 +474,98 @@ function renderEvents(filter = "all", showAll = false) {
     return;
   }
 
-  eventContainer.innerHTML = visibleEvents.map(event => `
-    <article class="event-card" data-category="${escapeHTML(event.category.toLowerCase())}">
-      <div class="event-card-content">
-        <div class="event-card-top">
-          <span class="event-category">${escapeHTML(event.category)}</span>
-          <span class="event-price">${escapeHTML(event.price)}</span>
-        </div>
+  eventContainer.innerHTML = visibleEvents
+    .map(event => {
+      const eventDate = formatEventDate(event.date);
 
-        <p class="event-date">${escapeHTML(event.day)}, ${formatEventDate(event.date)}</p>
+      return `
+        <article class="event-card" data-category="${event.category.toLowerCase()}">
+          <div class="event-card-content">
+            <div class="event-card-top">
+              <span class="event-category">${event.category}</span>
+              <span class="event-price">${event.price}</span>
+            </div>
 
-        <h3 class="event-title">${escapeHTML(event.title)}</h3>
+            <p class="event-date">${event.day}, ${eventDate}</p>
 
-        <p class="event-organizer">${escapeHTML(event.organizer)}</p>
+            <h3 class="event-title">${event.title}</h3>
 
-        <div class="event-details">
-          <p class="event-time">
-            <span aria-hidden="true">◷</span>
-            ${escapeHTML(event.time)}
-          </p>
-          <p class="event-location">
-            <span aria-hidden="true">⌖</span>
-            ${escapeHTML(event.location)}
-          </p>
-        </div>
+            <p class="event-organizer">${event.organizer}</p>
 
-        <p class="event-description">${escapeHTML(event.description)}</p>
+            <div class="event-details">
+              <p class="event-time">
+                <span aria-hidden="true">◷</span>
+                ${event.time}
+              </p>
+              <p class="event-location">
+                <span aria-hidden="true">⌖</span>
+                ${event.location}
+              </p>
+            </div>
 
-        <a
-          class="event-link"
-          href="${escapeHTML(event.link)}"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="View details for ${escapeHTML(event.title)}"
-        >
-          View Event <span aria-hidden="true">↗</span>
-        </a>
-      </div>
-    </article>
-  `).join("");
+            <p class="event-description">${event.description}</p>
 
+            <a
+              class="event-link"
+              href="${event.link}"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View details for ${event.title}"
+            >
+              View Event <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+      `;
+    })
+    .join("");
+
+  // Update View All button text if present.
   if (viewAllButton) {
-    const hasMore = filteredEvents.length > 6;
-
-    viewAllButton.hidden = !hasMore;
-    viewAllButton.textContent = showAll ? "Show Less" : "View All Events";
+    const hasMoreEvents = filteredEvents.length > 6;
+    viewAllButton.hidden = !hasMoreEvents;
+    viewAllButton.textContent = showAll
+      ? "Show Less"
+      : "View All Events";
     viewAllButton.setAttribute("aria-expanded", String(showAll));
   }
 }
 
-// Filter buttons.
+// Set up category filters.
 let activeFilter = "all";
 let showingAllEvents = false;
 
 filterButtons.forEach(button => {
   button.addEventListener("click", () => {
-    const selectedFilter = (
+    const selectedFilter =
       button.dataset.filter ||
-      button.textContent.trim()
-    ).toLowerCase();
+      button.getAttribute("data-filter") ||
+      button.textContent.trim().toLowerCase();
 
     activeFilter = selectedFilter;
     showingAllEvents = false;
 
-    filterButtons.forEach(item => {
-      const itemFilter = (
-        item.dataset.filter ||
-        item.textContent.trim()
-      ).toLowerCase();
+    filterButtons.forEach(filterButton => {
+      const filterValue =
+        filterButton.dataset.filter ||
+        filterButton.textContent.trim().toLowerCase();
 
-      const active = itemFilter === selectedFilter;
-      item.classList.toggle("active", active);
-      item.setAttribute("aria-pressed", String(active));
+      const isActive = filterValue === selectedFilter;
+
+      filterButton.classList.toggle("active", isActive);
+
+      if (isActive) {
+        filterButton.setAttribute("aria-pressed", "true");
+      } else {
+        filterButton.setAttribute("aria-pressed", "false");
+      }
     });
 
     renderEvents(activeFilter, showingAllEvents);
   });
 });
 
-// View All Events button.
+// Set up View All Events.
 if (viewAllButton) {
   viewAllButton.addEventListener("click", () => {
     showingAllEvents = !showingAllEvents;
@@ -563,7 +573,7 @@ if (viewAllButton) {
   });
 }
 
-// Mobile navigation.
+// Mobile navigation menu.
 const menuToggle =
   document.querySelector("#menu-toggle") ||
   document.querySelector(".menu-toggle") ||
@@ -584,6 +594,7 @@ if (menuToggle && mainNav) {
     menuToggle.setAttribute("aria-expanded", String(isOpen));
   });
 
+  // Close the menu after a navigation link is selected.
   mainNav.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
       mainNav.classList.remove("active");
@@ -593,5 +604,20 @@ if (menuToggle && mainNav) {
   });
 }
 
-// Render the calendar on page load.
+// Clean up URL parameters on your own site only.
+// This does not change the event links stored above.
+if (
+  window.location.search &&
+  window.history &&
+  window.history.replaceState
+) {
+  const cleanUrl =
+    window.location.origin +
+    window.location.pathname +
+    window.location.hash;
+
+  window.history.replaceState({}, document.title, cleanUrl);
+}
+
+// Initial calendar render.
 renderEvents();
